@@ -7,6 +7,7 @@
       <div class="card-header">新品提報-通路及國際條碼</div>
       <div class="card-body">
         <div class="col-lg-10 mx-auto">
+
           <div class="form-row">
             <label class="col-auto col-form-label">供應商編號</label>
             <div class="col-auto">
@@ -82,60 +83,36 @@
               <div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
                 <div class="pt-3"></div>
                 <!--供應商資料-->
+                <div class="card bg-secondary text-white px-3 py-2">
+                  <div class="row">
+                    <div class="col">
+                      供應商：12656444 金財通商務科技(股)
+                    </div>
+                    <div class="col">
+                      統一編號：12656354
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col">
+                      聯絡人：吳小美 02-22571234
+                    </div>
+                    <div class="col">
+                      E-Mail：abc@bankpro.com.tw
+                    </div>
+                  </div>
+                </div>
                 <div class="form-row">
                   <div class="form-group col-md-3">
-                    <label class="col-form-label">供應商編號：</label>
-                    <label class="col-form-label">12656354</label>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label class="col-form-label">供應商名稱：</label>
-                    <label class="col-form-label">金財通商務科技(股)</label>
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label class="col-form-label">統一編號：</label>
-                    <label class="col-form-label">12656354</label>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>供應商編號</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>供應商名稱</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>統一編號</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>聯絡人</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>聯絡人電話</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>E-Mail</label>
-                    <input type="email" class="form-control form-control-sm">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
                     <label>供應商貨號</label>
                     <input class="form-control form-control-sm">
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>採購單位</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>採購別</label>
                     <div>
                       <div class="form-check form-check-inline">
@@ -148,41 +125,7 @@
                       </div>
                     </div>
                   </div>
-
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>最小採購量</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>最大採購量</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>捨入設定檔</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>超量交貨允差%</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>超收無限制</label>
-                    <div>
-                      <div class="form-check form-check-inline">
-                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
-                          labelStyleClass="form-check-label"></p-radioButton>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
-                          labelStyleClass="form-check-label"></p-radioButton>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>退貨協議</label>
                     <div>
                       <div class="form-check form-check-inline">
@@ -197,23 +140,51 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>採購淨價</label>
+                  <div class="form-group col-md-3">
+                    <label>最小採購量</label>
                     <input class="form-control form-control-sm">
                   </div>
-                  <div class="form-group col-md-4">
-                    <label>價格單位</label>
+                  <div class="form-group col-md-3">
+                    <label>最大採購量</label>
                     <input class="form-control form-control-sm">
                   </div>
-                  <div class="form-group col-md-4">
-                    <label>採購幣別</label>
-                    <select class="form-control form-control-sm">
-                      <option>請選擇</option>
-                    </select>
+                  <div class="form-group col-md-3">
+                    <label>捨入設定檔</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>新品優惠合約</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
+                    <label>超量交貨允差%</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>超收無限制</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-3">
                     <label>固定供應商</label>
                     <div>
                       <div class="form-check form-check-inline">
@@ -226,23 +197,26 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>固定供應商生效日</label>
                     <p-calendar formControlName="fixedSupEffDate" dateFormat="yy/mm/dd" inputStyleClass="form-control form-control-sm"
                       [inputStyle]="{'width': '100%'}" [style]="{'width':'100%'}"></p-calendar>
                   </div>
-                  <div class="form-group col-md-4">
-                    <label>新品優惠合約</label>
-                    <div>
-                      <div class="form-check form-check-inline">
-                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有" styleClass="form-check-input"
-                          labelStyleClass="form-check-label"></p-radioButton>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無" styleClass="form-check-input"
-                          labelStyleClass="form-check-label"></p-radioButton>
-                      </div>
-                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>採購淨價</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>價格單位</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>採購幣別</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -265,62 +239,19 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>原產地國家</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>原產地地區</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-                  <div class="form-group col-md-4">
-                    <label>課稅別</label>
-                    <div>
-                      <div class="form-check form-check-inline">
-                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="應稅" styleClass="form-check-input"
-                          labelStyleClass="form-check-label"></p-radioButton>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="免稅" styleClass="form-check-input"
-                          labelStyleClass="form-check-label"></p-radioButton>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>採購群組</label>
-                    <select class="form-control form-control-sm">
-                      <option>請選擇</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>商品類型</label>
-                    <select class="form-control form-control-sm">
-                      <option>請選擇</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>庫存單位</label>
-                    <select class="form-control form-control-sm">
-                      <option>請選擇</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>門市最小撥量</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>門市最大撥量</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>配送方式</label>
                     <div>
                       <div class="form-check form-check-inline">
@@ -333,21 +264,42 @@
                       </div>
                     </div>
                   </div>
+                  <div class="form-group col-md-3">
+                    <label>課稅別</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="應稅" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="免稅" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>自動採購別</label>
+                  <div class="form-group col-md-3">
+                    <label>採購群組</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-                  <div class="form-group col-md-4">
-                    <label>商品屬性</label>
+                  <div class="form-group col-md-3">
+                    <label>商品類型</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                      <option>Z004 營運用品（備品）</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>庫存單位</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>高單價商品</label>
                     <div>
                       <div class="form-check form-check-inline">
@@ -362,50 +314,68 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
+                    <label>門市最小撥量</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>門市最大撥量</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>自動採購別</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>商品屬性</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>商品成分</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
                     <label>材質細碼</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-
-                  <div class="form-group col-md-4">
-                    <label>商品成分</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>商品群組</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
                   </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>保存期限</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label>有效期限</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>驗收期限</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>發票顯示名稱</label>
-                    <input class="form-control form-control-sm">
-                  </div>
-
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-3">
                     <label>歸屬部門</label>
                     <select class="form-control form-control-sm">
                       <option>請選擇</option>
                     </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>保存期限</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+
+                  <div class="form-group col-md-3">
+                    <label>有效期限</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>驗收期限</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>發票顯示名稱</label>
+                    <input class="form-control form-control-sm">
                   </div>
                 </div>
               </div>
