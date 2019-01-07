@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <img src="assets/logo.jpg" alt="">
+</div>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="GoodsGroup" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          商品作業管理
+        </a>
+        <div class="dropdown-menu" aria-labelledby="GoodsGroup">
+          <div class="dropdown-submenu">
+            <a class="dropdown-item" tabindex="-1" href="javascript:;">新品提報</a>
+            <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu2">
+              <a class="dropdown-item" href="#">新品提報查詢</a>
+              <a class="dropdown-item" href="app/GoodsNew">新品提報</a>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-submenu">
+              <a class="dropdown-item" tabindex="-1" href="javascript:;">商品變價</a>
+              <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenu3">
+                <a class="dropdown-item" href="#">新品提報查詢</a>
+                <a class="dropdown-item" href="#">新品提報</a>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="OrderGroup" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          訂單作業管理
+        </a>
+        <div class="dropdown-menu" aria-labelledby="OrderGroup">
+          <a class="dropdown-item" href="#">允收申請</a>
+          <a class="dropdown-item" href="doc/OrderAccDateDetail">允收申請檢視/簽核頁</a>
+          <a class="dropdown-item" href="#">允收申請查詢</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

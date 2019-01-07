@@ -1,0 +1,153 @@
+body {
+    margin: 10px;
+}
+
+html, body {
+    font-family: 微軟正黑體, Arial;
+}
+
+.addressCityPadding, .fieldLeftPadding {
+    padding-right: 8px;
+}
+
+.addressCountryPadding {
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.addressPadding, .fieldRightPadding {
+    padding-left: 0;
+}
+
+fieldset {
+    margin-top: 2em;
+}
+
+legend {
+    color: #3498DB;
+}
+
+.panel-success legend {
+    color: darkgreen;
+}
+
+.bg-subArea {
+    background-color: aliceblue;
+    padding: 20px 10px 5px 10px;
+}
+
+.info {
+    background-color: #E8FFF5;
+    border: 1px solid #73BF00;
+    padding: 10px;
+    margin-bottom: 10px;
+    line-height: 2em;
+}
+
+.buttonRow {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 微軟正黑體, Arial;
+    background-color: gray;
+    color: white;
+    padding: 6px;
+}
+
+.required {
+    border-color: red;
+    background-color: mistyrose;
+}
+
+.panel-footer {
+    text-align: right;
+}
+
+.panel-footer label {
+    margin-right: 6px;
+}
+
+.panel-footer select {
+    display: inline-block;
+    width: 150px;
+    margin-right: 15px;
+}
+
+.rwd-table {
+    background: #fff;
+    overflow: hidden;
+}
+
+.rwd-table tr:nth-of-type(2n) {
+    background: #eee;
+}
+
+.rwd-table th, .rwd-table td {
+    margin: 0.5em;
+}
+
+.rwd-table {
+    min-width: 100%;
+}
+
+.rwd-table th {
+    display: none;
+}
+
+.rwd-table td {
+    display: block;
+}
+
+.rwd-table td:before {
+    content: attr(data-th) " : ";
+    font-weight: bold;
+    width: 6.5em;
+    display: inline-block;
+}
+
+.rwd-table th, .rwd-table td {
+    text-align: left;
+}
+
+.rwd-table th, .rwd-table td:before {
+    color: lightcoral;
+    font-weight: bold;
+}
+
+@media (min-width: 480px) {
+    .rwd-table td:before {
+        display: none;
+    }
+    .rwd-table th, .rwd-table td {
+        display: table-cell;
+        padding: 0.25em 0.5em;
+    }
+    .rwd-table th:first-child, .rwd-table td:first-child {
+        padding-left: 0;
+    }
+    .rwd-table th:last-child, .rwd-table td:last-child {
+        padding-right: 0;
+    }
+    .rwd-table th, .rwd-table td {
+        padding: 0.5em !important;
+    }
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    background-color: transparent;
+    border-bottom: 3px solid #dd0000;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.tab-content>.tab-pane>.form-row {
+    background: floralwhite;
+    padding-top: 10px;
+}
+
+.tab-content>.tab-pane>.form-row:nth-of-type(2n) {
+    background: aliceblue;
+}

@@ -1,0 +1,128 @@
+<div class="container">
+    <h3>允收申請檢視/簽核</h3>
+    <form class="form-horizontal">
+        <div class="card border-success">
+            <div class="card-header">申請內容</div>
+            <div class="card-body">
+                <div class="col-lg-10 mx-auto">
+                    <fieldset>
+                        <legend>申請內容</legend>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th class="w-25">供應商</th>
+                                <td class="W-75">12656354 金財通商務(股)</td>
+                            </tr>
+                            <tr>
+                                <th>商品</th>
+                                <td>95456321 茶裏王600ml</td>
+                            </tr>
+                            <tr>
+                                <th>申請允收日期</th>
+                                <td>2019/06/30</td>
+                            </tr>
+                            <tr>
+                                <th>驗收期間</th>
+                                <td>2019/01/10～2019/01/20</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <p class="lead" style="background-color:lightcyan">目前狀態：<label style="color:Red;">簽核中</label></p>
+                    <fieldset>
+                        <legend style="margin-bottom: 0">簽核歷程</legend>
+                        <table class="rwd-table">
+                            　 <tr>
+                                　　 <th>時間</th>
+                                　　 <th>使用者</th>
+                                　　 <th>簽核動作</th>
+                                　　 <th>簽核備註</th>
+                                　 </tr>
+                            　 <tr>
+                                　　 <td data-th="時間">2018/12/20 11:12:24</td>
+                                　　 <td data-th="使用者">金財通商務(股)</td>
+                                　　 <td data-th="簽核動作">送出審核</td>
+                                　　 <td data-th="簽核備註"></td>
+                                　 </tr>
+                            <tr>
+                                　　 <td data-th="時間">2018/12/21 12:02:20</td>
+                                　　 <td data-th="使用者">張無忌</td>
+                                　　 <td data-th="簽核動作">退回</td>
+                                　　 <td data-th="簽核備註">商品名稱錯誤</td>
+                                　 </tr>
+                            <tr>
+                                　　 <td data-th="時間">2018/12/21 16:56:10</td>
+                                　　 <td data-th="使用者">金財通商務(股)</td>
+                                　　 <td data-th="簽核動作">退件重送</td>
+                                　　 <td data-th="簽核備註"></td>
+                                　 </tr>
+                            <tr>
+                                　　 <td data-th="時間">2018/12/21 17:08:33</td>
+                                　　 <td data-th="使用者">張無忌</td>
+                                　　 <td data-th="簽核動作">核准</td>
+                                　　 <td data-th="簽核備註"></td>
+                                　 </tr>
+                            <tr>
+                                　　 <td data-th="時間">2018/12/22 09:45:13</td>
+                                　　 <td data-th="使用者">張三豐</td>
+                                　　 <td data-th="簽核動作">核准</td>
+                                　　 <td data-th="簽核備註"></td>
+                                　 </tr>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="card border-primary">
+            <div class="card-header">單據簽核</div>
+            <div class="card-body">
+                <div class="col-lg-10 mx-auto">
+                    <div class="form-group row align-items-center">
+                        <label class="col-2 col-form-label">簽核動作</label>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="核准" styleClass="form-check-input"
+                                    labelStyleClass="form-check-label"></p-radioButton>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="退回" styleClass="form-check-input"
+                                    labelStyleClass="form-check-label"></p-radioButton>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 col-form-label">備註</label>
+                        <div class="col">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row align-items-center">
+                        <label class="col-sm-2 col-form-label">下一關人員</label>
+                        <div class="col-sm-auto">
+                            <select class="form-control">
+                                <option>請選擇</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <div class="form-check-inline">
+                                <p-checkbox name="groupname" value="val1" label="結束流程" styleClass="form-check-input"
+                                    labelStyleClass="form-check-label"></p-checkbox>
+                                <!--<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    結束流程
+                                </label>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="pull-right">
+                    <button type="button" class="btn btn-primary mr-2">送出簽核結果</button>
+                    <button type="button" class="btn btn-primary mr-2">進行編輯</button>
+                    <button type="button" class="btn btn-default">回上一頁</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
