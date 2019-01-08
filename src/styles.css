@@ -143,11 +143,25 @@ h3 {
     border-top: none;
 }
 
+.card-body .form-row {
+    background: floralwhite;
+    padding-top: 10px;
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.card-body .form-row:nth-of-type(2n) {
+    background:whitesmoke;
+}
+/*
 .tab-content>.tab-pane>.form-row {
     background: floralwhite;
     padding-top: 10px;
+    padding-left:8px;
+    padding-right:8px;
 }
 
 .tab-content>.tab-pane>.form-row:nth-of-type(2n) {
     background:whitesmoke;
 }
+*/
