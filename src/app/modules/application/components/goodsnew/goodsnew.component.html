@@ -70,7 +70,7 @@
                 <a class="nav-item nav-link" id="pop3-tab" data-toggle="tab" href="#pop3" role="tab" aria-controls="pop3"
                   aria-selected="false">船務相關</a>
                 <a class="nav-item nav-link" id="pop4-tab" data-toggle="tab" href="#pop4" role="tab" aria-controls="pop4"
-                  aria-selected="false">商品包裹</a>
+                  aria-selected="false">單位及條碼</a>
                 <a class="nav-item nav-link" id="pop5-tab" data-toggle="tab" href="#pop5" role="tab" aria-controls="pop5"
                   aria-selected="false">市面通路</a>
                 <a class="nav-item nav-link" id="pop6-tab" data-toggle="tab" href="#pop6" role="tab" aria-controls="pop6"
@@ -234,7 +234,7 @@
                   </div>
 
                   <div class="form-group col-md-4">
-                    <label>國際條碼</label>
+                    <label>發票顯示名稱</label>
                     <input class="form-control form-control-sm">
                   </div>
                 </div>
@@ -373,17 +373,340 @@
                     <label>驗收期限</label>
                     <input class="form-control form-control-sm">
                   </div>
-                  <div class="form-group col-md-3">
-                    <label>發票顯示名稱</label>
-                    <input class="form-control form-control-sm">
-                  </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
                 <div class="pt-3"></div>
                 船務相關
               </div>
+              <div class="tab-pane fade" id="pop4" role="tabpanel" aria-labelledby="pop4-tab">
+                <div class="pt-3"></div>
+                <!--單位尺寸-->
+                <h5 class="text-warning text-underline">單位尺寸
+                  <small><a href="#" class="badge badge-secondary pull-right">增加 <i class="fa fa-plus"></i></a></small>
+                </h5>
+                <div class="form-row">
+                  <div class="col">
+                    <label>商品單位</label>
+                  </div>
+                  <div class="col">
+                    <label>換算比</label>
+                  </div>
+                  <div class="col">
+                    <label>長</label>
+                  </div>
+                  <div class="col">
+                    <label>寬</label>
+                  </div>
+                  <div class="col">
+                    <label>高</label>
+                  </div>
+                  <div class="col">
+                    <label>長度單位</label>
 
+                  </div>
+                  <div class="col">
+                    <label>重量</label>
+                  </div>
+                  <div class="col">
+                    <label>重量單位</label>
+
+                  </div>
+                  <div class="col">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
+                  </div>
+                </div>
+                <!--<div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>商品單位</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <label>換算比</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <label>長</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <label>寬</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <label>高</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <label>長度單位</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <label>重量</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <label>重量單位</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
+                  </div>
+                </div>-->
+                <hr>
+                <h5 class="text-warning text-underline">國際條碼
+                  <small><a href="#" class="badge badge-secondary pull-right">增加 <i class="fa fa-plus"></i></a></small>
+                </h5>
+                <div class="form-row">
+                  <div class="col">
+                    <label>商品單位</label>
+                  </div>
+                  <div class="col">
+                    <label>國際條碼</label>
+                  </div>
+                  <div class="col">
+                    <label>國際條碼類型</label>
+                  </div>
+                  <div class="col">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
+                  </div>
+                </div>
+                <!--單位尺寸-->
+              </div>
+              <div class="tab-pane fade" id="pop5" role="tabpanel" aria-labelledby="pop5-tab">
+                <!--市面通路-->
+                <div class="pt-3"></div>
+                <div class="form-row">
+                  <div class="col">
+                    <label>市面通路</label>
+                  </div>
+                  <div class="col">
+                    <label>規格</label>
+                  </div>
+                  <div class="col">
+                    <label>正常價</label>
+                  </div>
+                  <div class="col">
+                    <label>最近DM日期</label>
+                  </div>
+                  <div class="col">
+                    <label>最近DM售價</label>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>家樂福</label>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>大潤發</label>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>愛買</label>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>全聯社</label>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>惠康</label>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <label>其他</label>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <!--市面通路-->
+              </div>
             </div>
           </div>
           <!--mainData-->
@@ -495,7 +818,7 @@
             </div>
           </div>
           <!--channelData-->
-          <button type="button" class="btn btn-danger pull-right mt-1">資料暫存</button>
+          <button type="button" class="btn btn-danger pull-right mt-2">資料暫存</button>
         </div>
       </div>
       <div class="card-footer">
