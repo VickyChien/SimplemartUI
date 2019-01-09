@@ -1,72 +1,93 @@
-<p>
-    test works!
-</p>
-
-<nav class="nav-justified ">
-    <div class="nav nav-tabs " id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab" aria-controls="pop1"
-            aria-selected="true">Popular Cars</a>
-        <a class="nav-item nav-link" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab" aria-controls="pop2"
-            aria-selected="false">Upcoming</a>
-        <a class="nav-item nav-link" id="pop3-tab" data-toggle="tab" href="#pop3" role="tab" aria-controls="pop3"
-            aria-selected="false">Newly Launched</a>
-
-    </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
-        <div class="pt-3"></div>
-        <p>1. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and
-            which doesn't require any CSS or Bootstrap overrides.
-
-            Simply place a div with the Bootstrap container class around the navbar. This will center the links inside
-            the navbar:</p>
-    </div>
-    <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
-        <div class="pt-3"></div>
-        <p>2. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and
-            which doesn't require any CSS or Bootstrap overrides.
-
-            Simply place a div with the Bootstrap container class around the navbar. This will center the links inside
-            the navbar:
-
-    </div>
-    <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
-        <div class="pt-3"></div>
-        <p>3. There's another way to do this for layouts that doesn't have to put the navbar inside the container, and
-            which doesn't require any CSS or Bootstrap overrides.
-
-            Simply place a div with the Bootstrap container class around the navbar. This will center the links inside
-            the navbar:
-
-    </div>
-
-</div>
-
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-            aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-            aria-selected="false">Profile</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-            aria-selected="false">Contact</a>
-    </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabcard" aria-labelledby="home-tab">
+<div class="container">
+    <form>
         <div class="card">
-            123
-            <br />
-            456<br />
-            456<br />
+            <div class="card-header">
+                功能名稱
+                <div class="card-header-info d-inline">
+                    <label>資訊一：<span class="badge badge-warning">美廉社</span></label>
+                    <label>資訊二：<span class="badge badge-warning">1234567890233</span></label>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="form-row align-items-center">
+                    <label class="col col-form-label">自動分配寬度欄位(1)</label>
+                    <div class="col">
+                        <input class="form-control form-control-sm">
+                    </div>
+                    <label class="col col-form-label">自動分配寬度欄位(2)</label>
+                    <div class="col">
+                        <select class="form-control form-control-sm">
+                            <option>請選擇</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <label class="col-2 col-form-label">指定寬度col-2(1)</label>
+                    <div class="col-2">
+                        <input class="form-control form-control-sm">
+                    </div>
+                    <label class="col-2 col-form-label">指定寬度col-2(2)</label>
+                    <div class="col-2">
+                        <select class="form-control form-control-sm">
+                            <option>請選擇</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <label class="col-auto col-form-label">請選擇人員</label>
+                    <div class="col-auto">
+                        <select class="form-control form-control-sm">
+                            <option>請選擇</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <label class="col-2 col-form-label text-right">Label靠右</label>
+                    <div class="col">
+                        <input class="form-control form-control-sm">
+                    </div>
+                    <label class="col-2 col-form-label text-right">角色群組</label>
+                    <div class="col-6">
+                        <div class="form-check form-check-inline">
+                            <p-checkbox name="group1" label="群組一" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <p-checkbox name="group1" label="群組二" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <p-checkbox name="group1" label="群組三" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <p-checkbox name="group1" label="群組四" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <label class="col-2 col-form-label text-right">帳號狀態</label>
+                    <div class="col-10">
+                        <div class="form-check form-check-inline">
+                            <p-radioButton name="groupname" value="0" id="inlineRadio1" label="正常" styleClass="form-check-input"
+                                labelStyleClass="form-check-label"></p-radioButton>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <p-radioButton name="status" value="1" label="鎖定" styleClass="form-check-input"
+                                labelStyleClass="form-check-label"></p-radioButton>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <p-radioButton name="status" value="9" label="刪除" styleClass="form-check-input"
+                                labelStyleClass="form-check-label"></p-radioButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="form-row justify-content-end align-items-center">
+                    <input type="submit" value="儲存" class="btn btn-primary mr-2" />
+                    <button type="button" class="btn btn-default">回上一頁</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="tab-pane fade" id="profile" role="tabcard" aria-labelledby="profile-tab">...</div>
-    <div class="tab-pane fade" id="contact" role="tabcard" aria-labelledby="contact-tab">...</div>
+
+
+    </form>
 </div>
-<!--<p-button label="Click" ></p-button>-->

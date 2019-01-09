@@ -6,6 +6,36 @@ html, body {
     font-family: 微軟正黑體, Arial;
 }
 
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    border-radius: 0.25rem;
+    margin: 1px;
+  }
+
+.card-header {
+    background-color: #1075a9;
+    color: white;
+  }
+
+  .card-header .badge
+  {
+      font-size:0.9em;
+  }
+
+  .card-header-info{
+      color: lightyellow;
+      margin-bottom:0;
+  }
+
+  .card-header-info label{
+      margin-left:15px;
+      margin-bottom:0;
+  }
+
+  .card-body{
+      padding-left:50px;
+      padding-right:50px;
+  }
+
 .addressCityPadding, .fieldLeftPadding {
     padding-right: 8px;
 }
