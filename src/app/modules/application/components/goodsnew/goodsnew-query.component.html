@@ -1,0 +1,44 @@
+<div class="container">
+    <form>
+        <div class="card">
+            <div class="card-header">
+                查詢條件
+            </div>
+            <div class="card-body">
+                <div class="form-row align-items-center">
+                    <label class="col-2 col-form-label text-right">建立日期區間</label>
+                    <div class="col-4">
+                        <input class="form-control form-control-sm">
+                    </div>
+                    <label class="col-2 col-form-label text-right">送審日期區間</label>
+                    <div class="col-4">
+                        <input class="form-control form-control-sm">
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <label class="col-2 col-form-label text-right">供應商</label>
+                    <div class="col-4">
+                        <p-autoComplete formControlName="supCode" [suggestions]="supplierList" inputStyleClass="form-control form-control-sm"
+                            [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+                        <label class="text-info ml-2">供應商名稱</label>
+                    </div>
+
+                    <label class="col-2 col-form-label text-right">通路</label>
+                    <div class="col-2">
+                        <select class="form-control form-control-sm">
+                            <option>請選擇</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="form-row justify-content-end align-items-center">
+                    <button type="button" class="btn btn-primary mr-2">查詢</button>
+                    <button type="reset" class="btn btn-default">清除重填</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

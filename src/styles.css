@@ -9,32 +9,31 @@ html, body {
 input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
     border-radius: 0.25rem;
     margin: 1px;
-  }
+}
 
 .card-header {
     background-color: #1075a9;
     color: white;
-  }
+}
 
-  .card-header .badge
-  {
-      font-size:0.9em;
-  }
+.card-header .badge {
+    font-size: 0.9em;
+}
 
-  .card-header-info{
-      color: lightyellow;
-      margin-bottom:0;
-  }
+.card-header-info {
+    color: lightyellow;
+    margin-bottom: 0;
+}
 
-  .card-header-info label{
-      margin-left:15px;
-      margin-bottom:0;
-  }
+.card-header-info label {
+    margin-left: 15px;
+    margin-bottom: 0;
+}
 
-  .card-body{
-      padding-left:50px;
-      padding-right:50px;
-  }
+.card-body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .addressCityPadding, .fieldLeftPadding {
     padding-right: 8px;
@@ -176,22 +175,21 @@ h3 {
 .card-body .form-row {
     background: floralwhite;
     padding-top: 10px;
-    padding-left:8px;
-    padding-right:8px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .card-body .form-row:nth-of-type(2n) {
-    background:whitesmoke;
-}
-/*
-.tab-content>.tab-pane>.form-row {
-    background: floralwhite;
-    padding-top: 10px;
-    padding-left:8px;
-    padding-right:8px;
+    background: whitesmoke;
 }
 
-.tab-content>.tab-pane>.form-row:nth-of-type(2n) {
-    background:whitesmoke;
+.btn-back {
+    border-radius: 0.25rem;
+    margin: 1px;
+    background-color: #563D7C;
+    color: white;
 }
-*/
+
+.btn-back:hover, .btn-back:focus, .btn-back:active, .btn-back.active, .open>.dropdown-toggle.btn-back {
+    background-color: #482382;
+}
