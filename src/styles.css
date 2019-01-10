@@ -24,7 +24,7 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
     color: white;
 }
 
-.card-header .badge {
+.card-header .badge, .card-footer .badge {
     font-size: 0.9em;
 }
 
