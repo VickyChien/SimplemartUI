@@ -2,8 +2,16 @@ body {
     margin: 10px;
 }
 
-html, body {
+html, body, table {
     font-family: 微軟正黑體, Arial;
+}
+
+p-table, table {
+    font-size: 0.9em;
+}
+
+table th {
+    background-color: #EAECEF;
 }
 
 input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
@@ -21,13 +29,29 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="fil
 }
 
 .card-header-info {
-    color: lightyellow;
+    color: #FFFFBB;
     margin-bottom: 0;
 }
 
 .card-header-info label {
     margin-left: 15px;
     margin-bottom: 0;
+}
+
+.card-header-view {
+    background-color: #5B8EA6;
+    /*color: #444444;*/
+}
+
+/*
+.card-header-view .card-header-info {
+    color: darkorange;
+}
+*/
+
+.card-header-sign {
+    background-color: #55A882;
+    /*color: #444444;*/
 }
 
 .card-body {
@@ -192,4 +216,16 @@ h3 {
 
 .btn-back:hover, .btn-back:focus, .btn-back:active, .btn-back.active, .open>.dropdown-toggle.btn-back {
     background-color: #482382;
+}
+
+.btn-table {
+    font-size: 0.9em;
+    border-radius: 0.25rem;
+    padding: 2px 10px;
+    font-weight: bold;
+    background-color: #CAE3FE;
+}
+
+.btn-table:hover, .btn-table:focus, .btn-table:active, .btn-table.active, .open>.dropdown-toggle.btn-table {
+    background-color: #aed3fc;
 }

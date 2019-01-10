@@ -2,7 +2,9 @@
     <form>
         <div class="card">
             <div class="card-header">
-                查詢條件
+                新品提報查詢 - 查詢條件
+                <span [ngClass]="{'panelToggle':true, 'pull-right':true, 'fa':true, 'fa-angle-up':isMenuUp, 'fa-angle-down':!isMenuUp}"
+                    (click)="isMenuUp=!isMenuUp"></span>
             </div>
             <div class="card-body">
                 <div class="form-row align-items-center">
@@ -10,21 +12,34 @@
                     <div class="col-4">
                         <input class="form-control form-control-sm">
                     </div>
-                    <label class="col-2 col-form-label text-right">送審日期區間</label>
-                    <div class="col-4">
-                        <input class="form-control form-control-sm">
-                    </div>
                 </div>
                 <div class="form-row">
-
+                    <label class="col-2 col-form-label text-right">識別碼</label>
+                    <div class="col-2">
+                        <input class="form-control form-control-sm">
+                    </div>
                     <label class="col-2 col-form-label text-right">供應商</label>
                     <div class="col-4">
                         <p-autoComplete formControlName="supCode" [suggestions]="supplierList" inputStyleClass="form-control form-control-sm"
                             [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
                         <label class="text-info ml-2">供應商名稱</label>
                     </div>
+                </div>
+                <div class="form-row">
 
                     <label class="col-2 col-form-label text-right">通路</label>
+                    <div class="col-2">
+                        <select class="form-control form-control-sm">
+                            <option>請選擇</option>
+                        </select>
+                    </div>
+                    <label class="col-2 col-form-label text-right">簽核狀態</label>
+                    <div class="col-2">
+                        <select class="form-control form-control-sm">
+                            <option>請選擇</option>
+                        </select>
+                    </div>
+                    <label class="col-2 col-form-label text-right">申請來源</label>
                     <div class="col-2">
                         <select class="form-control form-control-sm">
                             <option>請選擇</option>
@@ -41,4 +56,85 @@
             </div>
         </div>
     </form>
+    <!--其他功能按鈕-->
+    <div class="form-row justify-content-end align-items-center my-2 mx-2">
+        <input type="button" class="btn btn-success mr-2" value="新品提報" />
+        <input type="button" class="btn btn-success" value="Excel上傳" />
+    </div>
+    <!--DataGrid-->
+    <div>
+        <table class="table table-bordered table-sm">
+            <tr>
+                <th class="text-center" style="width:50px;">#</th>
+                <th>建立日期
+                    <i class="fa fa-sort"></i>
+                </th>
+                <th>供應商編號
+                    <i class="fa fa-sort"></i>
+                </th>
+                <th>供應商名稱
+                    <i class="fa fa-sort"></i>
+                </th>
+                <th>識別碼
+                    <i class="fa fa-sort"></i>
+                </th>
+                <th>提報來源
+                    <i class="fa fa-sort"></i>
+                </th>
+                <th>簽核狀態
+                    <i class="fa fa-sort"></i>
+                </th>
+                <th class="text-center" style="width:80px;">檢視</th>
+            </tr>
+
+            <tr>
+                <td class="text-center">123</td>
+                <td>2019/01/10 12:34:45</td>
+                <td>12348765</td>
+                <td>金財通商務科技(股)</td>
+                <td>1234567890123</td>
+                <td>供應商</td>
+                <td>家購人員審核中</td>
+                <td class="text-center">
+                    <button type="button" class="btn btn-table">檢視</button>
+                </td>
+            </tr>
+        </table>
+        <p-table tableStyleClass="table table-sm">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th class="text-center" style="width:50px;">#</th>
+                    <th [pSortableColumn]="'createdDateO'">建立日期<p-sortIcon [field]="'createdDateO'"></p-sortIcon>
+                    </th>
+                    <th [pSortableColumn]="'supCode'">供應商編號<p-sortIcon [field]="'supCode'"></p-sortIcon>
+                    </th>
+                    <th [pSortableColumn]="'supName'">供應商名稱<p-sortIcon [field]="'supName'"></p-sortIcon>
+                    </th>
+                    <th [pSortableColumn]="'intlBarcode'">識別碼<p-sortIcon [field]="'intlBarcode'"></p-sortIcon>
+                    </th>
+                    <th [pSortableColumn]="'applyRole'">提報來源<p-sortIcon [field]="'applyRole'"></p-sortIcon>
+                    </th>
+                    <th [pSortableColumn]="'signStatus'">簽核狀態<p-sortIcon [field]="'signStatus'"></p-sortIcon>
+                    </th>
+                    <th class="text-center" style="width:80px;">檢視</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body">
+                <tr>
+                    <td class="text-center">1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#" class="badge badge-primary ml-2">檢視</a>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+        <!--<p-paginator #pager [rows]="pageSize" [totalRecords]="gridData.total" [rowsPerPageOptions]="[5, 10, 15, 20, 25, 30]"></p-paginator>-->
+    </div>
 </div>
