@@ -3,8 +3,7 @@
         <div class="card">
             <div class="card-header">
                 新品提報查詢 - 查詢條件
-                <span [ngClass]="{'panelToggle':true, 'pull-right':true, 'fa':true, 'fa-angle-up':isMenuUp, 'fa-angle-down':!isMenuUp}"
-                    (click)="isMenuUp=!isMenuUp"></span>
+                <i class="fa fa-caret-down pull-right"></i>
             </div>
             <div class="card-body">
                 <div class="form-row align-items-center">
@@ -100,6 +99,7 @@
                 </td>
             </tr>
         </table>
+        <!--
         <p-table tableStyleClass="table table-sm">
             <ng-template pTemplate="header">
                 <tr>
@@ -134,7 +134,7 @@
                 </tr>
             </ng-template>
         </p-table>
-
+-->
         <!--<p-paginator #pager [rows]="pageSize" [totalRecords]="gridData.total" [rowsPerPageOptions]="[5, 10, 15, 20, 25, 30]"></p-paginator>-->
     </div>
 </div>
