@@ -1,0 +1,78 @@
+<!--簽核區塊-->
+<!--
+    目前簽核人員才顯示
+    SignLog.Any(SignFlowCode=申請單據.SignFlowCode && AppNo=申請單據Id && SignUser=登入帳號 && SignStatus=0)
+-->
+<div class="card mt-3">
+  <div class="card-header">單據簽核</div>
+  <div class="card-body">
+    <div class="form-row align-items-center">
+      <label class="col-2 col-form-label text-right">簽核動作：</label>
+      <div class="col">
+        <!--
+            若為供應商申請之單據，登入人員為家購負責人且目前簽核關卡=1，核准選項不顯示
+            申請單據.ApplyUserCategory='S' && 申請單據.SMUser=登入帳號 && 申請單據.NowStep=1
+        -->
+        <div class="form-check form-check-inline">
+          <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="核准" styleClass="form-check-input"
+                         labelStyleClass="form-check-label"></p-radioButton>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="退回" styleClass="form-check-input"
+                         labelStyleClass="form-check-label"></p-radioButton>
+        </div>
+      </div>
+    </div>
+    <div class="form-row align-items-center">
+      <label class="col-2 col-form-label text-right">備註：</label>
+      <div class="col-4">
+        <textarea class="form-control form-control-sm"></textarea>
+      </div>
+    </div>
+
+    <!--
+        若為流程最後一關，整列不顯示
+        單據.NowStep = SignFlow.Where(SignFlowCode=申請單據.SignFlowCode)?.SignStep.Max
+    -->
+    <div class="form-row align-items-center">
+      <label class="col-2 col-form-label text-right">下一關人員：</label>
+      <!--
+          下拉選單資料來源
+          1.	取得下一關簽核群組SignFlow.SingleOrDefault(SignFlowCode=單據.SignFlowCode && SignStep=單據.NowStep+1)?.SignGroup
+          2.	SignGroupUser.Where(SignGroupCode=SignFlow.SignGroup)
+      -->
+      <div class="col-auto">
+        <select class="form-control form-control-sm">
+          <option>請選擇</option>
+          <option>採購經理</option>
+        </select>
+      </div>
+      <!--
+          顯示結束流程checkbox條件
+          SignFlow.SingleOrDefault(SignFlowCode=單據.SignFlowCode && SignStep=單據.NowStep)?.CloseFlow=true
+      -->
+      <div class="col">
+        <div class="form-check-inline">
+          <p-checkbox name="groupname" value="val1" label="結束流程" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="form-row justify-content-end align-items-center">
+      <button type="submit" value="儲存" class="btn btn-primary mr-2">送出簽核結果</button>
+      <!--
+          單據為退件或作廢狀態才顯示退件/作廢重送按鈕
+          SignStatus IN (-1, -10, -20)
+      -->
+      <button type="submit" class="btn btn-danger mr-2">退件/作廢重送</button>
+      <!--
+          單據為家購人員簽核中狀態才顯示編輯按鈕
+          SignStatus=10
+      -->
+      <button type="submit" class="btn btn-danger mr-2">進行編輯</button>
+      <button type="button" class="btn btn-default">回上一頁</button>
+    </div>
+  </div>
+</div>
