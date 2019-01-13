@@ -6,12 +6,14 @@ import { SharedModule } from "../../shared/shared.module"
 import { GoodsnewComponent } from "./components/goodsnew/goodsnew.component"
 import { GoodsnewQueryComponent } from "./components/goodsnew/goodsnew-query.component"
 import { GoodsnewViewComponent } from "./components/goodsnew/goodsnew-view.component"
+import { GoodsnewSupplierComponent } from "./components/goodsnew/goodsnew-supplier.component"
 
 @NgModule({
     declarations: [
         GoodsnewComponent,
         GoodsnewQueryComponent,
-        GoodsnewViewComponent
+        GoodsnewViewComponent,
+        GoodsnewSupplierComponent
     ],
     imports: [
         CommonModule,
@@ -20,6 +22,7 @@ import { GoodsnewViewComponent } from "./components/goodsnew/goodsnew-view.compo
             { path: 'GoodsNew', component: GoodsnewComponent },
             { path: 'GoodsNewQuery', component: GoodsnewQueryComponent },
             { path: 'GoodsNewView', component: GoodsnewViewComponent },
+            { path: 'GoodsNewSupplier', component: GoodsnewSupplierComponent },
         ])
     ]
 })

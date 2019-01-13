@@ -378,7 +378,79 @@
               </div>
               <div class="tab-pane fade" id="pop3" role="tabpanel" aria-labelledby="pop3-tab">
                 <div class="pt-3"></div>
-                船務相關
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>商標</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>濃度</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>克</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>菸酒稅</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>進口材積</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>材積單位</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>健康捐</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>健康捐金額</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>進口前置天數</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>進口酒稅類別</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>進口代號 CCC Code</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+
+                </div>
               </div>
               <div class="tab-pane fade" id="pop4" role="tabpanel" aria-labelledby="pop4-tab">
                 <div class="pt-3"></div>
@@ -587,6 +659,9 @@
               <div class="tab-pane fade" id="pop5" role="tabpanel" aria-labelledby="pop5-tab">
                 <!--市面通路-->
                 <div class="pt-3"></div>
+                <h5 class="text-warning text-underline">市面通路
+                  <small><a href="#" class="badge badge-secondary pull-right">增加 <i class="fa fa-plus"></i></a></small>
+                </h5>
                 <div class="form-row">
                   <div class="col">
                     <label>市面通路</label>
@@ -603,10 +678,13 @@
                   <div class="col">
                     <label>最近DM售價</label>
                   </div>
+                  <div class="col"></div>
                 </div>
                 <div class="form-row align-items-center">
                   <div class="form-group col">
-                    <label>家樂福</label>
+                    <select class="form-control form-control-sm">
+                      <option>家樂福</option>
+                    </select>
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
@@ -620,27 +698,15 @@
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
                   </div>
-                </div>
-                <div class="form-row align-items-center">
                   <div class="form-group col">
-                    <label>大潤發</label>
-                  </div>
-                  <div class="form-group col">
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col">
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col">
-                    <input class="form-control form-control-sm">
-                  </div>
-                  <div class="form-group col">
-                    <input class="form-control form-control-sm">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
                   </div>
                 </div>
                 <div class="form-row align-items-center">
                   <div class="form-group col">
-                    <label>愛買</label>
+                    <select class="form-control form-control-sm">
+                      <option>大潤發</option>
+                    </select>
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
@@ -653,11 +719,16 @@
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
                   </div>
                 </div>
                 <div class="form-row align-items-center">
                   <div class="form-group col">
-                    <label>全聯社</label>
+                    <select class="form-control form-control-sm">
+                      <option>愛買</option>
+                    </select>
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
@@ -670,11 +741,16 @@
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
                   </div>
                 </div>
                 <div class="form-row align-items-center">
                   <div class="form-group col">
-                    <label>惠康</label>
+                    <select class="form-control form-control-sm">
+                      <option>全聯社</option>
+                    </select>
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
@@ -687,11 +763,16 @@
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
                   </div>
                 </div>
                 <div class="form-row align-items-center">
                   <div class="form-group col">
-                    <label>其他</label>
+                    <select class="form-control form-control-sm">
+                      <option>惠康</option>
+                    </select>
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
@@ -704,9 +785,191 @@
                   </div>
                   <div class="form-group col">
                     <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
+                  </div>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="form-group col">
+                    <select class="form-control form-control-sm">
+                      <option>其他</option>
+                    </select>
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col">
+                    <small><a href="#" class="badge badge-secondary ml-2">移除 <i class="fa fa-minus"></i></a></small>
                   </div>
                 </div>
                 <!--市面通路-->
+              </div>
+              <div class="tab-pane fade" id="pop6" role="tabpanel" aria-labelledby="pop6-tab">
+                <div class="pt-3"></div>
+                <!--其他資訊-->
+                <div class="form-row">
+                  <div class="form-group col-md-2">
+                    <label>縱深</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>價卡出清標</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>價卡顏色</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="白" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="黃" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>價卡尺寸</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="大" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="小" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>主力商品</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label>即飲</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="form-row">
+
+                  <div class="form-group col-md-2">
+                    <label>磅標計價</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label>磅標成份</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label>磅標效期</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="印" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="不印" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>預計上市日期</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>預估銷售金額(月)</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>小分類毛利率</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>銷售台帳模組</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>被取代商品品名</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>被取代品項平均未稅銷售額(月)
+                    </label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>被取代品項毛利率</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>商品特性介紹</label>
+                    <textarea class="form-control form-control-sm"></textarea>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>上市條件說明</label>
+                    <textarea class="form-control form-control-sm"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pop7" role="tabpanel" aria-labelledby="pop7-tab">
+                <div class="pt-3"></div>
+                <!--商品附件-->
+                <h5 class="text-warning text-underline">商品圖片(至少需上傳一張)
+                </h5>
+                <p-fileUpload #imageUpload multiple="multiple" accept="image/*" maxFileSize="10000000"
+                  [showUploadButton]="false" chooseLabel="選擇檔案" cancelLabel="清除已選擇檔案" [previewWidth]="250">
+                </p-fileUpload>
+                <br>
+                <h5 class="text-warning text-underline">檢附檢驗報告&成份營養表(需用印)
+                </h5>
+                <p-fileUpload #imageUpload multiple="multiple" accept="image/*" maxFileSize="10000000"
+                  [showUploadButton]="false" chooseLabel="選擇檔案" cancelLabel="清除已選擇檔案" [previewWidth]="250">
+                </p-fileUpload>
               </div>
             </div>
           </div>
