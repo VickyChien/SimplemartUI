@@ -1,6 +1,6 @@
 <div class="container">
   <form>
-    <!--通路及國際條碼-->
+    <!--通路-->
     <h3>STEP1.輸入通路</h3>
     <div class="card">
       <div class="card-header">商品變價 - 選擇通路</div>
@@ -32,7 +32,129 @@
           <button type="button" class="btn btn-default">回上一頁</button>
         </div>
       </div>
+    </div>
 
+    <!--申請內容-->
+    <h3>STEP2.家購人員申請頁</h3>
+    <div class="card">
+      <div class="card-header">商品變價 - 新增申請
+        <div class="card-header-info d-inline">
+          <label><span class="badge badge-warning">義美巧克力酥片黑可可(280公克)</span></label>
+          <label>通路：<span class="badge badge-warning">美廉社</span></label>
+          <label>供應商：<span class="badge badge-warning">金財通商務科技(股)</span></label>
+          <label>課稅別：<span class="badge badge-warning">應稅</span></label>
+        </div>
+      </div>
+      <div class="card-body">
+        <nav class="nav-justified">
+          <div class="nav nav-tabs " id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab" aria-controls="pop1"
+              aria-selected="true">商品價格</a>
+            <a class="nav-item nav-link" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab" aria-controls="pop2"
+              aria-selected="false">其他資訊</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
+            <div class="pt-3"></div>
+            <!--商品價格-->
+            <h5 class="text-warning">原始價格</h5>
+            <div class="form-row">
+              <div class="col row">
+                <div class="col-md-4">
+                  <label>進價</label>
+                  <input class="form-control form-control-sm" value="88">
+                </div>
+                <div class="col-md-8">
+                  <label>起迄日</label>
+                  <input class="form-control form-control-sm" value="2018/09/12~2019/06/30">
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col">
+                  <label>進價</label>
+                  <input class="form-control form-control-sm" value="88">
+                </div>
+                <div class="col-2">
+                  <label>起迄日</label>
+                  <input class="form-control form-control-sm" value="2018/09/12~2019/06/30">
+                </div>
+              </div>
+              <div class="col row">
+                <div class="col">
+                  <label>進價</label>
+                  <input class="form-control form-control-sm" value="88">
+                </div>
+                <div class="col-2">
+                  <label>起迄日</label>
+                  <input class="form-control form-control-sm" value="2018/09/12~2019/06/30">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-2 text-right">
+                <label>進價</label>
+              </div>
+              <div class="col-md-2">
+                <label>88.8</label>
+              </div>
+              <div class="col-md-2 text-right">
+                <label>起迄日期</label>
+              </div>
+              <div class="col-md-3">
+                <label>2018/09/12~2019/06/30</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-2 text-right">
+                <label>促銷進價</label>
+              </div>
+              <div class="col-md-2">
+                <label>85</label>
+              </div>
+              <div class="col-md-2 text-right">
+                <label>起迄日期</label>
+              </div>
+              <div class="col-md-3">
+                <label>2018/09/12~2019/05/01</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-2 text-right">
+                <label>健康捐</label>
+              </div>
+              <div class="col-md-2">
+                <label></label>
+              </div>
+              <div class="col-md-2 text-right">
+                <label>起迄日期</label>
+              </div>
+              <div class="col-md-3">
+                <label></label>
+              </div>
+            </div>
+            <h5 class="text-warning">異動價格</h5>
+          </div>
+          <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
+            <div class="pt-3"></div>
+            其他資訊
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <label class="col-form-label">審核人員：</label>
+          <div class="col-sm-auto mr-2">
+            <select class="form-control form-control-sm">
+              <option>請選擇</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary mr-2">送出申請</button>
+          <!--<div class="d-inline ml-4 mr-2"><input class="form-control form-control-sm" placeholder="退回供應商備註"></div>
+          <button type="button" class="btn btn-back mr-2">退回供應商</button>-->
+          <button type="button" class="btn btn-default">回上一頁</button>
+        </div>
+      </div>
     </div>
   </form>
 </div>
