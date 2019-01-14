@@ -8,6 +8,7 @@ import { GoodsnewQueryComponent } from "./components/goodsnew/goodsnew-query.com
 import { GoodsnewViewComponent } from "./components/goodsnew/goodsnew-view.component"
 import { GoodsnewSupplierComponent } from "./components/goodsnew/goodsnew-supplier.component"
 import { GoodsnewExcelComponent } from "./components/goodsnew/goodsnew-excel.component"
+import { GoodsPriceComponent } from "./components/goodsprice/goodsprice.component"
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { GoodsnewExcelComponent } from "./components/goodsnew/goodsnew-excel.com
         GoodsnewQueryComponent,
         GoodsnewViewComponent,
         GoodsnewSupplierComponent,
-        GoodsnewExcelComponent
+        GoodsnewExcelComponent,
+        GoodsPriceComponent
     ],
     imports: [
         CommonModule,
@@ -26,6 +28,7 @@ import { GoodsnewExcelComponent } from "./components/goodsnew/goodsnew-excel.com
             { path: 'GoodsNewView', component: GoodsnewViewComponent },
             { path: 'GoodsNewSupplier', component: GoodsnewSupplierComponent },
             { path: 'GoodsNewExcel', component: GoodsnewExcelComponent },
+            { path: 'GoodsPrice', component: GoodsPriceComponent },
         ])
     ]
 })
