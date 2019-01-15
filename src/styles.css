@@ -6,6 +6,14 @@ html, body, table, .ui-button-text {
     font-family: 微軟正黑體, Arial;
 }
 
+.border-2 {
+    border-width: 2px !important;
+}
+
+.font-small {
+    font-size: 0.95em;
+}
+
 p-table, table {
     font-size: 0.9em;
 }
@@ -17,6 +25,12 @@ table th {
 input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
     border-radius: 0.25rem;
     margin: 1px;
+}
+
+input[readonly] {
+    background-color: transparent !important;
+    border: 0;
+    /*font-size: 1em;*/
 }
 
 .card-header {
@@ -206,7 +220,12 @@ h3 {
 .card-body .form-row:nth-of-type(2n) {
     background: whitesmoke;
 }
-
+/*
+.card-body .form-row .form-group {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+*/
 .btn-back {
     border-radius: 0.25rem;
     margin: 1px;

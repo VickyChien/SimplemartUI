@@ -40,9 +40,9 @@
       <div class="card-header">商品變價 - 新增申請
         <div class="card-header-info d-inline">
           <label><span class="badge badge-warning">義美巧克力酥片黑可可(280公克)</span></label>
-          <label>通路：<span class="badge badge-warning">美廉社</span></label>
-          <label>供應商：<span class="badge badge-warning">金財通商務科技(股)</span></label>
-          <label>課稅別：<span class="badge badge-warning">應稅</span></label>
+          <label><span class="badge badge-warning">美廉社</span></label>
+          <label><span class="badge badge-warning">金財通商務科技(股)</span></label>
+          <label><span class="badge badge-warning">應稅</span></label>
         </div>
       </div>
       <div class="card-body">
@@ -59,85 +59,170 @@
             <div class="pt-3"></div>
             <!--商品價格-->
             <h5 class="text-warning">原始價格</h5>
-            <div class="form-row">
-              <div class="col row">
-                <div class="col-md-4">
-                  <label>進價</label>
-                  <input class="form-control form-control-sm" value="88">
-                </div>
-                <div class="col-md-8">
-                  <label>起迄日</label>
-                  <input class="form-control form-control-sm" value="2018/09/12~2019/06/30">
-                </div>
-              </div>
-              <div class="col row">
-                <div class="col">
-                  <label>進價</label>
-                  <input class="form-control form-control-sm" value="88">
-                </div>
-                <div class="col-2">
-                  <label>起迄日</label>
-                  <input class="form-control form-control-sm" value="2018/09/12~2019/06/30">
-                </div>
-              </div>
-              <div class="col row">
-                <div class="col">
-                  <label>進價</label>
-                  <input class="form-control form-control-sm" value="88">
-                </div>
-                <div class="col-2">
-                  <label>起迄日</label>
-                  <input class="form-control form-control-sm" value="2018/09/12~2019/06/30">
-                </div>
-              </div>
+            <div class="form-row bg-secondary text-white">
+              <div class="col-2 offset-1"><label>價格類別</label></div>
+              <div class="col-2"><label>價格</label></div>
+              <div class="col-4"><label>起迄日期</label></div>
+              <div class="col-2"><label>毛利率</label></div>
             </div>
-            <div class="form-row">
-              <div class="col-md-2 text-right">
-                <label>進價</label>
-              </div>
-              <div class="col-md-2">
-                <label>88.8</label>
-              </div>
-              <div class="col-md-2 text-right">
-                <label>起迄日期</label>
-              </div>
-              <div class="col-md-3">
-                <label>2018/09/12~2019/06/30</label>
-              </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1"><label class="col-form-label">進價(未稅)</label></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="82.5" readonly></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  readonly></div>
             </div>
-            <div class="form-row">
-              <div class="col-md-2 text-right">
-                <label>促銷進價</label>
-              </div>
-              <div class="col-md-2">
-                <label>85</label>
-              </div>
-              <div class="col-md-2 text-right">
-                <label>起迄日期</label>
-              </div>
-              <div class="col-md-3">
-                <label>2018/09/12~2019/05/01</label>
-              </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1"><label class="col-form-label">促銷進價</label></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="80.3" readonly></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  readonly></div>
             </div>
-            <div class="form-row">
-              <div class="col-md-2 text-right">
-                <label>健康捐</label>
-              </div>
-              <div class="col-md-2">
-                <label></label>
-              </div>
-              <div class="col-md-2 text-right">
-                <label>起迄日期</label>
-              </div>
-              <div class="col-md-3">
-                <label></label>
-              </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1"><label class="col-form-label">健康捐</label></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="" readonly></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="" readonly></div>
             </div>
-            <h5 class="text-warning">異動價格</h5>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1"><label class="col-form-label">市價</label></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="96" readonly></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  readonly></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="9.77%" readonly></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1"><label class="col-form-label">售價</label></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="93" readonly></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  readonly></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="6.85%" readonly></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1"><label class="col-form-label">會員價</label></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="92" readonly></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  readonly></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="5.84%" readonly></div>
+            </div>
+
+            <h5 class="text-warning mt-3">異動價格</h5>
+            <div class="form-row bg-success text-white">
+              <div class="col-2 offset-1"><label>價格類別</label></div>
+              <div class="col-2"><label>價格</label></div>
+              <div class="col-4"><label>起迄日期</label></div>
+              <div class="col-2"><label>毛利率</label></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1">
+                <div class="form-check-inline">
+                  <p-checkbox name="groupname" value="val1" label="進價(未稅)" styleClass="form-check-input"
+                    labelStyleClass="form-check-label"></p-checkbox>
+                </div>
+              </div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="82.5" disabled></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  disabled></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1">
+                <div class="form-check-inline">
+                  <p-checkbox name="groupname" value="val1" label="促銷進價" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                </div>
+              </div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="80.3" disabled></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  disabled></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1">
+                <div class="form-check-inline">
+                  <p-checkbox name="groupname" value="val1" label="健康捐" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                </div>
+              </div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" disabled></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" disabled></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1">
+                <div class="form-check-inline">
+                  <p-checkbox name="groupname" value="val1" label="市價" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                </div>
+              </div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="96" disabled></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  disabled></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="9.77%" disabled></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1">
+                <div class="form-check-inline">
+                  <p-checkbox name="groupname" value="val1" label="售價" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                </div>
+              </div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="93"></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="6.85%" disabled></div>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="form-group col-2 offset-1">
+                <div class="form-check-inline">
+                  <p-checkbox name="groupname" value="val1" label="會員價" styleClass="form-check-input" labelStyleClass="form-check-label"></p-checkbox>
+                </div>
+              </div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="92" disabled></div>
+              <div class="form-group col-4"><input class="form-control form-control-sm" value="2019/01/01~2019/03/30"
+                  disabled></div>
+              <div class="form-group col-2"><input class="form-control form-control-sm" value="5.84%" disabled></div>
+            </div>
           </div>
           <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
             <div class="pt-3"></div>
-            其他資訊
+            <!--其他資訊-->
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label>異動費用</label>
+                <input class="form-control form-control-sm">
+              </div>
+              <div class="form-group col-md-3">
+                <label>扣款科目</label>
+                <select class="form-control form-control-sm">
+                  <option>請選擇</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>扣款名稱</label>
+                <input class="form-control form-control-sm" disabled>
+              </div>
+              <div class="form-group col-md-3">
+                <label>會科代碼</label>
+                <input class="form-control form-control-sm" disabled>
+              </div>
+            </div>
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label>其他備註</label>
+                <textarea class="form-control form-control-sm"></textarea>
+              </div>
+              <div class="form-group col-md-3">
+                <label>價標</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有" styleClass="form-check-input"
+                      labelStyleClass="form-check-label"></p-radioButton>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無" styleClass="form-check-input"
+                      labelStyleClass="form-check-label"></p-radioButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <h5 class="text-warning text-underline">通路價卡
+            </h5>
+            <p-fileUpload #imageUpload multiple="multiple" accept="image/*" maxFileSize="10000000" [showUploadButton]="false"
+              chooseLabel="選擇檔案" cancelLabel="清除已選擇檔案" [previewWidth]="250">
+            </p-fileUpload>
           </div>
         </div>
       </div>
