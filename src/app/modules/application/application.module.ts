@@ -9,6 +9,7 @@ import { GoodsnewViewComponent } from "./components/goodsnew/goodsnew-view.compo
 import { GoodsnewSupplierComponent } from "./components/goodsnew/goodsnew-supplier.component"
 import { GoodsnewExcelComponent } from "./components/goodsnew/goodsnew-excel.component"
 import { GoodsPriceComponent } from "./components/goodsprice/goodsprice.component"
+import { GoodsPriceViewComponent } from "./components/goodsprice/goodsprice-view.component"
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { GoodsPriceComponent } from "./components/goodsprice/goodsprice.componen
         GoodsnewViewComponent,
         GoodsnewSupplierComponent,
         GoodsnewExcelComponent,
-        GoodsPriceComponent
+        GoodsPriceComponent,
+        GoodsPriceViewComponent
     ],
     imports: [
         CommonModule,
@@ -29,6 +31,7 @@ import { GoodsPriceComponent } from "./components/goodsprice/goodsprice.componen
             { path: 'GoodsNewSupplier', component: GoodsnewSupplierComponent },
             { path: 'GoodsNewExcel', component: GoodsnewExcelComponent },
             { path: 'GoodsPrice', component: GoodsPriceComponent },
+            { path: 'GoodsPriceView', component: GoodsPriceViewComponent },
         ])
     ]
 })
