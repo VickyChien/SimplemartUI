@@ -11,6 +11,7 @@ import { GoodsnewExcelComponent } from "./components/goodsnew/goodsnew-excel.com
 import { GoodsPriceComponent } from "./components/goodsprice/goodsprice.component"
 import { GoodsPriceViewComponent } from "./components/goodsprice/goodsprice-view.component"
 import { GoodsPriceQueryComponent } from "./components/goodsprice/goodsprice-query.component"
+import { GoodsPriceSupplierComponent } from "./components/goodsprice/goodsprice-supplier.component"
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { GoodsPriceQueryComponent } from "./components/goodsprice/goodsprice-que
         GoodsnewExcelComponent,
         GoodsPriceComponent,
         GoodsPriceViewComponent,
-        GoodsPriceQueryComponent
+        GoodsPriceQueryComponent,
+        GoodsPriceSupplierComponent
     ],
     imports: [
         CommonModule,
@@ -35,6 +37,7 @@ import { GoodsPriceQueryComponent } from "./components/goodsprice/goodsprice-que
             { path: 'GoodsPrice', component: GoodsPriceComponent },
             { path: 'GoodsPriceView', component: GoodsPriceViewComponent },
             { path: 'GoodsPriceQuery', component: GoodsPriceQueryComponent },
+            { path: 'GoodsPriceSupplier', component: GoodsPriceSupplierComponent },
         ])
     ]
 })
