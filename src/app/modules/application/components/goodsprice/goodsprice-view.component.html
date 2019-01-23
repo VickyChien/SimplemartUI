@@ -12,13 +12,13 @@
             <div class="card-body">
                 <!--商品價格-->
                 <h5 class="text-warning">目前價格</h5>
-                <table class="table table-bordered table-striped table-sm table-hover">
+                <table class="table table-bordered table-sm table-view table-hover">
                     <thead>
                         <tr>
-                            <th>價格類別</th>
-                            <th>價格</th>
-                            <th>起迄日期</th>
-                            <th>毛利率</th>
+                            <th class="td-view">價格類別</th>
+                            <th class="td-view">價格</th>
+                            <th class="td-view">起迄日期</th>
+                            <th class="td-view">毛利率</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,30 +61,30 @@
                     </tbody>
                 </table>
                 <h5 class="text-warning">異動價格</h5>
-                <table class="table table-bordered table-striped table-sm table-hover text-view">
+                <table class="table table-bordered table-sm table-view table-hover">
                     <thead>
-                        <tr class="text-viewfield">
-                            <th>價格類別</th>
-                            <th>價格</th>
-                            <th>起迄日期</th>
-                            <th>毛利率</th>
+                        <tr>
+                            <th class="td-view">價格類別</th>
+                            <th class="td-view">價格</th>
+                            <th class="td-view">起迄日期</th>
+                            <th class="td-view">毛利率</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-viewfield">進價(未稅)</td>
+                            <td>進價(未稅)</td>
                             <td>84</td>
                             <td>2019/01/01~2019/03/30</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="text-viewfield">售價</td>
+                            <td>售價</td>
                             <td>95</td>
                             <td>2019/01/01~2019/03/30</td>
                             <td>6.85%</td>
                         </tr>
                         <tr>
-                            <td class="text-viewfield">會員價</td>
+                            <td>會員價</td>
                             <td>94</td>
                             <td>2019/01/01~2019/03/30</td>
                             <td>5.84%</td>
@@ -92,30 +92,30 @@
                     </tbody>
                 </table>
                 <h5 class="text-warning">其他資訊</h5>
-                <table class="table table-bordered table-striped table-sm table-hover text-view">
+                <table class="table table-bordered table-sm table-view">
                     <tbody>
                         <tr>
-                            <td style="width:10%" class="text-viewfield">異動費用</td>
+                            <td style="width:10%" class="td-view">異動費用</td>
                             <td style="width:15%">123</td>
-                            <td style="width:10%" class="text-viewfield">價標</td>
+                            <td style="width:10%" class="td-view">價標</td>
                             <td colspan="5"></td>
                         </tr>
                         <tr>
-                            <td style="width:10%" class="text-viewfield">扣款科目</td>
+                            <td style="width:10%" class="td-view">扣款科目</td>
                             <td style="width:15%">102MD</td>
-                            <td style="width:10%" class="text-viewfield">扣款名稱</td>
+                            <td style="width:10%" class="td-view">扣款名稱</td>
                             <td style="width:15%">資訊處理費</td>
-                            <td style="width:10%" class="text-viewfield">會科代碼</td>
+                            <td style="width:10%" class="td-view">會科代碼</td>
                             <td style="width:15%">51111006</td>
-                            <td style="width:10%" class="text-viewfield">會科名稱</td>
+                            <td style="width:10%" class="td-view">會科名稱</td>
                             <td style="width:15%">銷貨成本-資訊處理費</td>
                         </tr>
                         <tr>
-                            <td class="text-viewfield">其他備註</td>
+                            <td class="td-view">其他備註</td>
                             <td colspan="7"></td>
                         </tr>
                         <tr>
-                            <td class="text-viewfield">通路價卡</td>
+                            <td class="td-view">通路價卡</td>
                             <td colspan="7">
                                 <ul class="list-inline m-0">
                                     <li class="list-inline-item mr-3"><a href="javascript:;">957862.pdf</a></li>
@@ -134,13 +134,13 @@
             </div>
             <div class="class-body">
                 <div class="mx-5 my-3">
-                    <table class="table table-bordered table-sm">
+                    <table class="table table-bordered table-sm table-sign table-hover">
                         <thead>
                             　 <tr>
-                                　　 <th>時間</th>
-                                　　 <th>使用者</th>
-                                　　 <th>簽核動作</th>
-                                　　 <th>簽核備註</th>
+                                　　 <th class="td-sign">時間</th>
+                                　　 <th class="td-sign">使用者</th>
+                                　　 <th class="td-sign">簽核動作</th>
+                                　　 <th class="td-sign">簽核備註</th>
                                 　 </tr>
 
                         </thead>
@@ -221,9 +221,9 @@
             <div class="card-footer">
                 <div class="form-row justify-content-end align-items-center">
                     <button type="submit" value="儲存" class="btn btn-primary mr-2">送出簽核結果</button>
-                    <!--<button type="submit" value="儲存" class="btn btn-danger mr-2">退件/作廢重送</button>
-                    <button type="submit" value="儲存" class="btn btn-danger mr-2">進行編輯</button>-->
-                    <button type="button" class="btn btn-default">回上一頁</button>
+                    <button type="submit" value="儲存" class="btn btn-danger mr-2">退件/作廢重送</button>
+                    <button type="submit" value="儲存" class="btn btn-danger mr-2">進行編輯</button>
+                    <button type="button" class="btn btn-outline-secondary">回上一頁</button>
                 </div>
             </div>
         </div>
