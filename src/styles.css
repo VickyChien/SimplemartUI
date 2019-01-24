@@ -17,6 +17,10 @@ html, body, table, .ui-button-text {
 }
 */
 
+td {
+    vertical-align: middle !important;
+}
+
 table.table-view {
     border: 1px solid #CA61C3;
 }
@@ -35,24 +39,37 @@ table.table-view>tbody>tr>td {
 }
 
 table.table-sign {
-    border: 1px solid #077187;
+    border: 1px solid #333333;
 }
 
 table.table-sign>thead>tr>th {
-    border: 1px solid #077187;
+    border: 1px solid #333333;
 }
 
 table.table-sign>tbody>tr>td {
-    border: 1px solid #077187;
+    border: 1px solid #333333;
 }
 
 .td-sign {
-    background-color: #074F57;
+    background-color: #777777;
     color: white;
 }
 
-.text-view {
-    color: lightcoral;
+table.table-input {
+    border: 1px solid #CA61C3;
+}
+
+table.table-input>thead>tr>th {
+    border: 1px solid #CA61C3;
+}
+
+table.table-input>tbody>tr>td {
+    border: 1px solid #CA61C3;
+}
+
+.td-input {
+    background-color: #F4EBF8;
+    color: black;
 }
 
 p-table, table {
@@ -79,15 +96,21 @@ input[readonly] {
 .card-header {
     background-color: #A7017A;
     color: white;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .card-header .badge, .card-footer .badge {
     font-size: 0.9em;
+    background-color: #3E3A3A;
+    color: white;
 }
 
 .card-header-info {
-    color: #FFFFBB;
+    color: #F4EBF8;
     margin-bottom: 0;
+    font-weight: normal;
+    font-size: 0.9em;
 }
 
 .card-header-info label {
@@ -107,7 +130,7 @@ input[readonly] {
 */
 
 .card-header-sign {
-    background-color: #074F57;
+    background-color: #777777;
     /*color: #444444;*/
 }
 
@@ -260,16 +283,21 @@ h3 {
 
 .card-body .form-row {
     background: #FFF6F6;
-    padding: 5px 8px;
+    padding: 3px 8px;
 }
 
 .card-body .form-row:nth-of-type(2n) {
     background: white;
 }
 
-.card-body .form-group{
-    margin:0;
-    padding:5px;
+.card-body .form-group {
+    margin: 0;
+    padding: 5px;
+}
+
+.card-body label {
+    margin: 0;
+    padding: 0;
 }
 
 /*
