@@ -6,6 +6,7 @@ import { OrderAccDateComponent } from './components/order-acc-date/order-acc-dat
 import { OrderAccDateApplyComponent } from './components/order-acc-date/order-acc-date-apply.component';
 import { OrderAccDateQueryComponent } from './components/order-acc-date/order-acc-date-query.component';
 import { OrderDetailComponent } from './components/order/order-detail.component';
+import { OrderQueryComponent } from './components/order/order-query.component';
 import { TestComponent } from './components/test/test.component';
 import { TestSignComponent } from './components/test/test-sign.component';
 import { TestViewSupplierComponent } from './components/test/test-view-supplier.component';
@@ -17,6 +18,7 @@ import { SharedModule } from "../../shared/shared.module"
     OrderAccDateApplyComponent,
     OrderAccDateQueryComponent,
     OrderDetailComponent,
+    OrderQueryComponent,
     TestComponent,
     TestSignComponent,
     TestViewSupplierComponent
@@ -29,6 +31,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'OrderAccDateApply', component: OrderAccDateApplyComponent },
       { path: 'OrderAccDateQuery', component: OrderAccDateQueryComponent },
       { path: 'OrderDetail', component: OrderDetailComponent },
+      { path: 'OrderQuery', component: OrderQueryComponent },
       { path: 'Test', component: TestComponent },
       { path: 'TestSign', component: TestSignComponent },
       { path: 'TestViewSupplier', component: TestViewSupplierComponent }
