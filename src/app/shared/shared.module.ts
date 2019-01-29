@@ -21,15 +21,11 @@ import { TabViewModule } from 'primeng/tabview';
 import { CardModule } from 'primeng/card';
 import { PickListModule } from 'primeng/picklist';
 
-//import { BpAppSignLogComponent } from "./components/bp-app-sign-log.component";
-//import { BpAppSignBlockComponent } from "./components/bp-app-sign-block.component";
-//import { BpAppViewFooterComponent } from "./components/bp-app-view-footer.component";
-
 @NgModule({
   imports: [
     CommonModule,
     DialogModule,
-    OrderListModule
+    OrderListModule,
   ],
   exports: [
     CommonModule,
