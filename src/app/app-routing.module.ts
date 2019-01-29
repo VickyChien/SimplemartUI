@@ -7,6 +7,7 @@ const routes: Routes = [
     path: '', component: DefaultLayoutComponent,
     children: [
       { path: 'doc', loadChildren: './modules/doc/doc.module#DocModule' },
+      { path: 'main', loadChildren: './modules/main/main.module#MainModule' },
       { path: 'app', loadChildren: './modules/application/application.module#ApplicationModule' }
     ],
   }
