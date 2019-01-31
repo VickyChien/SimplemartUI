@@ -72,11 +72,23 @@
           訂單作業管理
         </a>
         <div class="dropdown-menu" aria-labelledby="OrderGroup">
-          <a class="dropdown-item" href="doc/OrderAccDateApply">允收申請</a>
-          <a class="dropdown-item" href="doc/OrderAccDateDetail">允收申請檢視/簽核頁</a>
-          <a class="dropdown-item" href="doc/OrderAccDateQuery">允收申請查詢</a>
-          <a class="dropdown-item" href="doc/OrderQuery">訂單查詢</a>
-          <a class="dropdown-item" href="doc/OrderDetail">訂單明細</a>
+          <div class="dropdown-submenu">
+            <a class="dropdown-item" tabindex="-1" href="javascript:;">訂單管理</a>
+            <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenuSupplier">
+              <a class="dropdown-item" href="doc/OrderAccDateApply">允收申請</a>
+              <a class="dropdown-item" href="doc/OrderAccDateDetail">允收申請檢視/簽核頁</a>
+              <a class="dropdown-item" href="doc/OrderAccDateQuery">允收申請查詢</a>
+              <a class="dropdown-item" href="doc/OrderQuery">訂單查詢</a>
+              <a class="dropdown-item" href="doc/OrderDetail">訂單明細</a>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-submenu">
+              <a class="dropdown-item" tabindex="-1" href="javascript:;">退貨管理</a>
+              <div class="dropdown-menu dropdown-" aria-labelledby="dropdownMenuSupplier">
+                <a class="dropdown-item" href="doc/OrderReturnDetail">退貨明細</a>
+              </div>
+            </div>
         </div>
       </li>
     </ul>
