@@ -44,7 +44,7 @@
     <br>
     <h3>新增頁面-家購人員</h3>
     <div class="card">
-      <div class="card-header">新品提報 - 審核
+      <div class="card-header">新品提報
         <div class="card-header-info d-inline">
           <label><span class="badge">金財通商務科技(股)</span></label>
           <label><span class="badge">美廉社</span></label>
@@ -59,7 +59,11 @@
               aria-controls="mainData">
               新品提報主檔
             </button>
-            <button class="btn btn-success ml-2" data-toggle="collapse" data-target="#channelData" role="button"
+            <button class="btn btn-info ml-2" data-toggle="collapse" data-target="#supData" role="button"
+              aria-expanded="false" aria-controls="SupData">
+              供應商資料
+            </button>
+            <button class="btn btn-info ml-2" data-toggle="collapse" data-target="#channelData" role="button"
               aria-expanded="false" aria-controls="channelData">
               通路價格
             </button>
@@ -68,10 +72,10 @@
           <div class="collapse show" id="mainData" data-parent="#divData">
             <nav class="nav-justified">
               <div class="nav nav-tabs " id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab"
-                  aria-controls="pop1" aria-selected="true">廠商資料</a>
-                <a class="nav-item nav-link" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab" aria-controls="pop2"
-                  aria-selected="false">商品資料</a>
+                <!--<a class="nav-item nav-link active" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab"
+                  aria-controls="pop1" aria-selected="true">廠商資料</a>-->
+                <a class="nav-item nav-link active" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab"
+                  aria-controls="pop2" aria-selected="true">商品資料</a>
                 <a class="nav-item nav-link" id="pop3-tab" data-toggle="tab" href="#pop3" role="tab" aria-controls="pop3"
                   aria-selected="false">船務相關</a>
                 <a class="nav-item nav-link" id="pop4-tab" data-toggle="tab" href="#pop4" role="tab" aria-controls="pop4"
@@ -85,27 +89,26 @@
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
+              <!--
               <div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
                 <div class="pt-3"></div>
-                <!--供應商資料-->
-                <div class="bg-secondary text-white rounded px-3 py-2">
-                  <div class="row">
-                    <div class="col">
-                      供應商：12656444 金財通商務科技(股)
-                    </div>
-                    <div class="col">
-                      統一編號：12656354
-                    </div>
-                  </div>
-                  <div class="row mt-2">
-                    <div class="col">
-                      聯絡人：吳小美 02-22571234
-                    </div>
-                    <div class="col">
-                      E-Mail：abc@bankpro.com.tw
-                    </div>
-                  </div>
-                </div>
+                
+                <table class="table table-bordered table-sm table-view">
+                  <tbody>
+                    <tr>
+                      <td class="td-view" style="min-width:100px;">供應商</td>
+                      <td style="min-width:100px;">12656444 金財通商務科技(股)</td>
+                      <td class="td-view" style="min-width:100px;">統一編號</td>
+                      <td style="min-width:100px;">12656354</td>
+                    </tr>
+                    <tr>
+                      <td class="td-view">聯絡人</td>
+                      <td>吳小美 02-22571234</td>
+                      <td class="td-view">E-Mail</td>
+                      <td>abc@bankpro.com.tw</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <hr>
                 <div class="form-row">
                   <div class="form-group col-md-3">
@@ -226,7 +229,8 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
+              -->
+              <div class="tab-pane fade show active" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
                 <div class="pt-3"></div>
                 <!--商品資料-->
                 <div class="form-row">
@@ -370,7 +374,6 @@
                     <label>保存期限</label>
                     <input class="form-control form-control-sm">
                   </div>
-
                   <div class="form-group col-md-3">
                     <label>有效期限</label>
                     <input class="form-control form-control-sm">
@@ -378,6 +381,27 @@
                   <div class="form-group col-md-3">
                     <label>驗收期限</label>
                     <input class="form-control form-control-sm">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>採購規則</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>日配商品</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -936,6 +960,159 @@
             </div>
           </div>
           <!--mainData-->
+          <!--suplData-->
+          <div class="collapse" id="supData" data-parent="#divData">
+
+            <nav class="nav-justified">
+              <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="tab-supplier" data-toggle="tab" href="#tab-supplier" role="tab"
+                  aria-controls="tab-supplier" aria-selected="true">供應商資料</a>
+
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="tab-channel" role="tabpanel" aria-labelledby="tab-channel">
+                <div class="pt-3"></div>
+                <table class="table table-bordered table-sm table-view">
+                  <tbody>
+                    <tr>
+                      <td class="td-view" style="min-width:100px;">供應商</td>
+                      <td style="min-width:100px;">12656444 金財通商務科技(股)</td>
+                      <td class="td-view" style="min-width:100px;">統一編號</td>
+                      <td style="min-width:100px;">12656354</td>
+                    </tr>
+                    <tr>
+                      <td class="td-view">聯絡人</td>
+                      <td>吳小美 02-22571234</td>
+                      <td class="td-view">E-Mail</td>
+                      <td>abc@bankpro.com.tw</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>供應商貨號</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>採購單位</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>採購別</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="自營" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="寄售" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>退貨協議</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="可以退貨" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="不可退貨" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>最小採購量</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>最大採購量</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>捨入設定檔</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>新品優惠合約</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>超量交貨允差%</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>超收無限制</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>固定供應商</label>
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否" styleClass="form-check-input"
+                          labelStyleClass="form-check-label"></p-radioButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>固定供應商生效日</label>
+                    <p-calendar formControlName="fixedSupEffDate" dateFormat="yy/mm/dd" inputStyleClass="form-control form-control-sm"
+                      [inputStyle]="{'width': '100%'}" [style]="{'width':'100%'}"></p-calendar>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>採購淨價</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>價格單位</label>
+                    <input class="form-control form-control-sm">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>採購幣別</label>
+                    <select class="form-control form-control-sm">
+                      <option>請選擇</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--supData-->
           <!--channelData-->
           <div class="collapse" id="channelData" data-parent="#divData">
 
@@ -1057,8 +1234,8 @@
             </select>
           </div>
           <button type="button" class="btn btn-primary mr-2">送出提報</button>
-          <div class="d-inline ml-4 mr-2"><input class="form-control form-control-sm" placeholder="退回供應商備註"></div>
-          <button type="button" class="btn btn-secondary mr-2">退回供應商</button>
+          <!--<div class="d-inline ml-4 mr-2"><input class="form-control form-control-sm" placeholder="退回供應商備註"></div>
+          <button type="button" class="btn btn-secondary mr-2">退回供應商</button>-->
           <button type="button" class="btn btn-outline-secondary">回上一頁</button>
         </div>
       </div>
