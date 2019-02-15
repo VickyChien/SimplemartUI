@@ -8,7 +8,8 @@ const routes: Routes = [
     children: [
       { path: 'doc', loadChildren: './modules/doc/doc.module#DocModule' },
       { path: 'main', loadChildren: './modules/main/main.module#MainModule' },
-      { path: 'app', loadChildren: './modules/application/application.module#ApplicationModule' }
+      { path: 'app', loadChildren: './modules/application/application.module#ApplicationModule' },
+      { path: 'invoice', loadChildren: './modules/invoice/invoice.module#InvoiceModule' },
     ],
   }
 ];

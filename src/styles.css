@@ -25,7 +25,7 @@ hr {
 }
 */
 
-td {
+th, td {
     vertical-align: middle !important;
 }
 
