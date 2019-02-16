@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 
 import { InvoiceQueryComponent } from './components/invoice-query.component';
 import { InvoiceCreateComponent } from './components/invoice-create.component';
+import { InvoiceViewComponent } from './components/invoice-view.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
 @NgModule({
   declarations: [
     InvoiceQueryComponent,
-    InvoiceCreateComponent
+    InvoiceCreateComponent,
+    InvoiceViewComponent
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { SharedModule } from "../../shared/shared.module"
     RouterModule.forChild([
       { path: 'InvoiceQuery', component: InvoiceQueryComponent },
       { path: 'InvoiceCreate', component: InvoiceCreateComponent },
+      { path: 'InvoiceView', component: InvoiceViewComponent },
     ])
   ]
 })

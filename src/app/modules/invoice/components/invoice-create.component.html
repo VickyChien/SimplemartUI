@@ -4,6 +4,7 @@
       <div class="card-header">發票開立
       </div>
       <div class="card-body">
+
         <h5 class="text-warning">發票資料</h5>
 
         <div class="form-row align-items-center">
@@ -11,30 +12,27 @@
           <div class="col-md-2">
             <input class="form-control form-control-sm">
           </div>
-          <label class="col-md-2 col-form-label text-right">發票號碼</label>
-          <div class="col-md-2">
-            <input class="form-control form-control-sm">
-          </div>
-          <label class="col-md-2 col-form-label text-right">稅別</label>
-          <div class="col-md-2">
-            <select class="form-control form-control-sm">
-              <option>應稅</option>
-              <option>免稅</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row align-items-center">
           <label class="col-md-2 col-form-label text-right">發票日期</label>
           <div class="col-md-2">
             <input class="form-control form-control-sm">
           </div>
-          <label class="col-md-2 col-form-label text-right">發票年月</label>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">稅碼</label>
+          <div class="col-md-6">
+            <select class="form-control form-control-sm">
+              <option>V1 21進項稅額-應稅5%(三聯式發票/電子計算機發票扣抵聯)</option>
+            </select>
+          </div>
+          <label class="col-md-2 col-form-label text-right">發票歸屬</label>
           <div class="col-md-2">
-            <input class="form-control form-control-sm" disabled>
+            <select class="form-control form-control-sm">
+              <option>1 應稅使用</option>
+            </select>
           </div>
         </div>
         <div class="form-row align-items-center">
-          <label class="col-md-2 col-form-label text-right">發票金額</label>
+          <label class="col-md-2 col-form-label text-right">未稅金額</label>
           <div class="col-md-2">
             <input class="form-control form-control-sm">
           </div>
@@ -42,40 +40,55 @@
           <div class="col-md-2">
             <input class="form-control form-control-sm">
           </div>
-          <label class="col-md-2 col-form-label text-right">未稅金額</label>
+          <label class="col-md-2 col-form-label text-right">發票金額</label>
           <div class="col-md-2">
-            <input class="form-control form-control-sm">
+            <input class="form-control form-control-sm" disabled>
           </div>
         </div>
-        <div class="form-row align-items-center">
-          <label class="col-md-2 col-form-label text-right">發票格式</label>
-          <div class="col-md-2">
-            <select class="form-control form-control-sm">
-              <option>21</option>
-            </select>
-          </div>
-          <label class="col-md-2 col-form-label text-right">扣抵代號</label>
-          <div class="col-md-2">
-            <input class="form-control form-control-sm">
-          </div>
-          <label class="col-md-2 col-form-label text-right">發票歸屬</label>
-          <div class="col-md-2">
-            <input class="form-control form-control-sm">
-          </div>
+        <h5 class="text-warning">發票明細</h5>
+        <div style="max-height: 250px; overflow-y:auto;">
+          <table class="table table-bordered table-sm table-view table-hover text-small">
+            <thead>
+              <tr>
+                <th class="text-center td-view" style="width:50px;">#</th>
+                <th class="td-view">訂單編號
+                </th>
+                <th class="td-view" style="width:50px;">項次
+                </th>
+                <th class="td-view">商品編號
+                </th>
+                <th class="td-view">商品名稱
+                </th>
+                <th class="td-view">數量
+                </th>
+                <th class="td-view">單位
+                </th>
+                <th class="td-view">驗收日期
+                </th>
+                <th class="td-view text-right">金額
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td>20192223456789</td>
+                <td>1</td>
+                <td>8851234591</td>
+                <td>亦美小泡芙6入</td>
+                <td>24</td>
+                <td>箱</td>
+                <td>2019/02/23</td>
+                <td class="text-right">1,346</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="card-footer">
         <div class="form-row justify-content-end align-items-center">
-          <label class="col-form-label">審核人員：</label>
-          <div class="col-sm-auto mr-2">
-            <select class="form-control form-control-sm">
-              <option>請選擇</option>
-
-            </select>
-          </div>
-          <button type="button" class="btn btn-primary mr-2">送出申請</button>
-          <!--<div class="d-inline ml-4 mr-2"><input class="form-control form-control-sm" placeholder="退回供應商備註"></div>
-          <button type="button" class="btn btn-secondary mr-2">退回供應商</button>-->
+          <button type="button" class="btn btn-primary mr-2">發票開立</button>
+          <!--<button type="button" class="btn btn-secondary mr-2">發票刪除</button>-->
           <button type="button" class="btn btn-outline-secondary">回上一頁</button>
         </div>
       </div>
