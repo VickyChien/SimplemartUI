@@ -1,0 +1,192 @@
+<div class="container">
+    <form>
+        <div class="card">
+            <div class="card-header">
+                發票立帳 - 查詢條件
+                <i class="fa fa-caret-down pull-right"></i>
+            </div>
+            <div class="card-body">
+                <div class="form-row align-items-center">
+                    <label class="col-md-2 col-form-label text-right">發票日期</label>
+                    <div class="col-md-3">
+                        <input class="form-control form-control-sm">
+                    </div>
+                    <label class="col-md-2 col-form-label text-right">發票年月</label>
+                    <div class="col-md-2">
+                        <select class="form-control form-control-sm">
+                            <option>全部</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <label class="col-md-2 col-form-label text-right">供應商</label>
+                    <div class="col-md-3">
+                        <p-autoComplete formControlName="supCode" inputStyleClass="form-control form-control-sm"
+                            [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+                        <label class="text-info ml-2">供應商名稱</label>
+                    </div>
+                    <label class="col-md-2 col-form-label text-right">發票類型</label>
+                    <div class="col-md-2">
+                        <select class="form-control form-control-sm">
+                            <option>全部</option>
+                            <option>發票</option>
+                            <option>溢開折讓</option>
+                            <option>退貨折讓</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row align-items-center">
+                    <label class="col-md-2 col-form-label text-right">發票號碼</label>
+                    <div class="col-md-2">
+                        <input class="form-control form-control-sm">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <label class="col-md-2 col-form-label text-right">發票狀態</label>
+                    <div class="col-md-2">
+                        <select class="form-control form-control-sm">
+                            <option>已開立</option>
+                            <option>已立帳</option>
+                            <option>已結案</option>
+                            <option>已退回</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="form-row justify-content-end align-items-center">
+                    <button type="button" class="btn btn-primary mr-2">查詢</button>
+                    <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--其他功能按鈕-->
+    <div class="form-row justify-content-end align-items-center my-2 mx-2">
+        <!--
+        <label class="col-form-label">結帳年月：</label>
+        <div class="col-sm-auto mr-2">
+            <select class="form-control form-control-sm">
+                <option>201901</option>
+                <option>201902</option>
+                <option>201903</option>
+            </select>
+        </div>
+        -->
+        <input type="button" class="btn btn-success mr-2" value="立帳確認" />
+        <input type="button" class="btn btn-danger" value="取消立帳" />
+    </div>
+    <!--DataGrid-->
+    <div>
+        <table class="table table-bordered table-sm table-view table-hover text-small">
+            <thead>
+                <tr>
+                    <th class="text-center td-view" style="width:50px;">#</th>
+                    <th class="text-center td-view" style="width:50px;">
+                        <p-checkbox name="groupname" value="val1"></p-checkbox>
+                    </th>
+                    <th class="td-view">發票年月
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view">發票號碼
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view">發票狀態
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view">發票類型
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view text-right">發票金額
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view">結帳年月
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view">供應商編號
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="td-view">供應商名稱
+                        <i class="fa fa-sort"></i>
+                    </th>
+                    <th class="text-center td-view" style="width:80px;">內容</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+                <tr>
+                    <td class="text-center">1</td>
+                    <td class="text-center">
+                        <p-checkbox name="groupname" value="val1"></p-checkbox>
+                    </td>
+                    <td>201902</td>
+                    <td>MH24095770</td>
+                    <td>已開立</td>
+                    <td>發票</td>
+                    <td class="text-right">195,842</td>
+                    <td></td>
+                    <td>1265635401</td>
+                    <td>金財通商務科技(股)</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-outline-primary">內容</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td class="text-center">
+                        <p-checkbox name="groupname" value="val1"></p-checkbox>
+                    </td>
+                    <td>201902</td>
+                    <td>CJ25468792</td>
+                    <td>已開立</td>
+                    <td>發票</td>
+                    <td class="text-right">13,687</td>
+                    <td></td>
+                    <td>1265635401</td>
+                    <td>金財通商務科技(股)</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-outline-primary">內容</button>
+                    </td>
+                </tr>
+                -->
+
+                <tr>
+                    <td class="text-center">1</td>
+                    <td class="text-center">
+                        <p-checkbox name="groupname" value="val1"></p-checkbox>
+                    </td>
+                    <td>201902</td>
+                    <td>AC12578642</td>
+                    <td>已立帳</td>
+                    <td>發票</td>
+                    <td class="text-right">25,472</td>
+                    <td>201902</td>
+                    <td>1265635401</td>
+                    <td>金財通商務科技(股)</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-outline-primary">內容</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td class="text-center">
+                        <p-checkbox name="groupname" value="val1"></p-checkbox>
+                    </td>
+                    <td>201902</td>
+                    <td>IK54734625</td>
+                    <td>已立帳</td>
+                    <td>發票</td>
+                    <td class="text-right">35,666</td>
+                    <td>201902</td>
+                    <td>1265635401</td>
+                    <td>金財通商務科技(股)</td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-outline-primary">內容</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { InvoiceQueryComponent } from './components/invoice-query.component';
 import { InvoiceCreateComponent } from './components/invoice-create.component';
 import { InvoiceViewComponent } from './components/invoice-view.component';
+import { InvoiceConfirmComponent } from './components/invoice-confirm.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -12,7 +13,8 @@ import { SharedModule } from "../../shared/shared.module"
   declarations: [
     InvoiceQueryComponent,
     InvoiceCreateComponent,
-    InvoiceViewComponent
+    InvoiceViewComponent,
+    InvoiceConfirmComponent
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'InvoiceQuery', component: InvoiceQueryComponent },
       { path: 'InvoiceCreate', component: InvoiceCreateComponent },
       { path: 'InvoiceView', component: InvoiceViewComponent },
+      { path: 'InvoiceConfirm', component: InvoiceConfirmComponent },
     ])
   ]
 })
