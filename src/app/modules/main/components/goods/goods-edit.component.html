@@ -1,0 +1,49 @@
+<div class="container">
+    <form>
+        <div class="card">
+            <div class="card-header">
+                商品主檔
+                <i class="fa fa-caret-down pull-right"></i>
+            </div>
+            <div class="card-body">
+                <p-panel>
+                    <p-header>
+                        <div class="form-group row">
+                            <label class="col-form-label">1 .</label>
+                            <div class="ml-auto justify-content-end">
+                                <button class="btn btn-outline-secondary btn-sm text-small" type="button">編輯資料</button>
+                                <button class="btn btn-outline-danger ml-2" type="button">取消新增</button>
+                            </div>
+                        </div>
+                    </p-header>
+                    <div class="row">
+                        <fieldset class="col-sm-12 row" disabled>
+                            <div class="col-sm-12">
+                                <!--#region 供應商顯示區域-->
+                                <div class="form-group row">
+                                    <label class="col-sm-2 form-control-label">供應商編號：</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control form-control-sm">
+                                            <option>請選擇</option>
+                                        </select>
+                                    </div>
+                                    <label class="col-sm-2 form-control-label">供應商名稱：</label>
+                                    <div class="col-sm-2">
+                                        <input id="supName" autofill-fix value="{{showSupName(rowData.supCode)}}" class="form-control" />
+                                    </div>
+                                    <label class="col-sm-2 form-control-label">固定供應商：</label>
+
+                                    <div class="col-sm-2">
+
+                                    </div>
+
+                                </div>
+                                <!--#endregion-->
+                            </div>
+                        </fieldset>
+                    </div>
+                </p-panel>
+            </div>
+        </div>
+    </form>
+</div>
