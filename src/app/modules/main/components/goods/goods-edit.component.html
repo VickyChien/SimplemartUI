@@ -1,49 +1,579 @@
 <div class="container">
-    <form>
-        <div class="card">
-            <div class="card-header">
-                商品主檔
-                <i class="fa fa-caret-down pull-right"></i>
-            </div>
-            <div class="card-body">
-                <p-panel>
-                    <p-header>
-                        <div class="form-group row">
-                            <label class="col-form-label">1 .</label>
-                            <div class="ml-auto justify-content-end">
-                                <button class="btn btn-outline-secondary btn-sm text-small" type="button">編輯資料</button>
-                                <button class="btn btn-outline-danger ml-2" type="button">取消新增</button>
-                            </div>
-                        </div>
-                    </p-header>
-                    <div class="row">
-                        <fieldset class="col-sm-12 row" disabled>
-                            <div class="col-sm-12">
-                                <!--#region 供應商顯示區域-->
-                                <div class="form-group row">
-                                    <label class="col-sm-2 form-control-label">供應商編號：</label>
-                                    <div class="col-sm-2">
-                                        <select class="form-control form-control-sm">
-                                            <option>請選擇</option>
-                                        </select>
-                                    </div>
-                                    <label class="col-sm-2 form-control-label">供應商名稱：</label>
-                                    <div class="col-sm-2">
-                                        <input id="supName" autofill-fix value="{{showSupName(rowData.supCode)}}" class="form-control" />
-                                    </div>
-                                    <label class="col-sm-2 form-control-label">固定供應商：</label>
+	<form>
+		<div class="card">
+			<div class="card-header">商品異動申請</div>
+			<div class="card-body">
+				<nav class="nav-justified">
+					<div class="nav nav-tabs " id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="pop1-tab" data-toggle="tab" href="#pop1" role="tab"
+							aria-controls="pop1" aria-selected="true">商品資料</a>
+						<a class="nav-item nav-link" id="pop2-tab" data-toggle="tab" href="#pop2" role="tab" aria-controls="pop2"
+							aria-selected="false">供應商資料</a>
+						<a class="nav-item nav-link" id="pop3-tab" data-toggle="tab" href="#pop3" role="tab" aria-controls="pop3"
+							aria-selected="false">通路資料</a>
+					</div>
+				</nav>
+				<div class="tab-content" id="nav-tabContent">
+					<!--商品資料-->
+					<div class="tab-pane fade show active" id="pop1" role="tabpanel" aria-labelledby="pop1-tab">
+						<div class="pt-3"></div>
+						<div class="form-row">
+							<div class="form-group col-md-3">
+								<label>商品編號</label>
+								<input id="goodsCode" name="goodsCode" class="form-control form-control-sm" disabled />
+							</div>
+							<div class="form-group col-md-6 bp-valid-tooltip">
+								<label>商品名稱</label>
+								<input id="goodsName" class="form-control form-control-sm" />
 
-                                    <div class="col-sm-2">
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>採購群組</label>
+								<select disabled class="form-control form-control-sm">
+									<option>請選擇</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>商品類型</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>商品群組</label>
+								<select class="form-control form-control-sm" disabled>
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>商品屬性</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>庫存單位</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>原產地國家</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>原產地地區</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-6 bp-valid-tooltip">
+								<label>規格</label>
+								<input class="form-control form-control-sm" />
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>自動採購別</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>歸屬部門</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>貨源</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="廠商自送"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="物流配送"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>銷項稅</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="應稅"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="免稅"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>保存期限</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>有效期限</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>驗收期限</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>高單價商品</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>門市最小撥量</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>門市最大撥量</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>課菸酒稅</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>課健康捐</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6 bp-valid-tooltip">
+								<label>發票顯示名稱</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>採購規則</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>日配商品</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>商品成分</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>材質細碼</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>商標(船務)</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>濃度(船務)</label>
+								<input class="form-control form-control-sm" />
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>材質重量克(船務)</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>進口材積</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>材積單位</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>進口前置天數</label>
+								<input class="form-control form-control-sm" />
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>進口酒稅類別</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>進口代號</label>
+								<input class="form-control form-control-sm" />
+							</div>
 
-                                    </div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>磅標計價</label>
+								<select class="form-control form-control-sm">
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>磅標成份</label>
+								<input class="form-control form-control-sm" />
+							</div>
+							<div class="form-group col-md-3 bp-valid-tooltip">
+								<label>列印磅標效期</label>
+								<div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="印"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+									<div class="form-check form-check-inline">
+										<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="不印"
+											styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--供應商資料-->
+					<div class="tab-pane fade" id="pop2" role="tabpanel" aria-labelledby="pop2-tab">
+						<div class="pt-3"></div>
+						<!--第一筆供應商-->
+						<div class="panel">
+							<div class="panel-header">
+								<div class="form-group row align-items-center" style="margin:0; padding:0">
+									<label class="col-form-label">1.</label>
+									<div class="ml-auto justify-content-end">
+										<button class="btn btn-outline-secondary btn-sm text-small" type="button">編輯資料</button>
+										<button class="btn btn-outline-info btn-sm ml-2" type="button">取消新增</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label>供應商編號</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>供應商名稱</label>
+									<input class="form-control form-control-sm">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label>供應商貨號</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>採購單位</label>
+									<select class="form-control form-control-sm">
+										<option>請選擇</option>
+									</select>
+								</div>
+								<div class="form-group col-md-3">
+									<label>採購別</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="自營"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="寄售"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-md-3">
+									<label>退貨協議</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="可以退貨"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="不可退貨"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label>最小採購量</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>最大採購量</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>捨入設定檔</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>新品優惠合約</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label>超量交貨允差%</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>超收無限制</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-md-3">
+									<label>固定供應商</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+										<div class="form-check form-check-inline">
+											<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+												styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-md-3">
+									<label>固定供應商生效日</label>
+									<p-calendar formControlName="fixedSupEffDate" dateFormat="yy/mm/dd"
+										inputStyleClass="form-control form-control-sm" [inputStyle]="{'width': '100%'}"
+										[style]="{'width':'100%'}"></p-calendar>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label>採購淨價</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>價格單位</label>
+									<input class="form-control form-control-sm">
+								</div>
+								<div class="form-group col-md-3">
+									<label>採購幣別</label>
+									<select class="form-control form-control-sm">
+										<option>請選擇</option>
+									</select>
+								</div>
+							</div>
+						</div>
 
-                                </div>
-                                <!--#endregion-->
-                            </div>
-                        </fieldset>
-                    </div>
-                </p-panel>
-            </div>
-        </div>
-    </form>
+						<!--第二筆供應商-->
+						<div class="panel">
+								<div class="panel-header">
+									<div class="form-group row align-items-center" style="margin:0; padding:0">
+										<label class="col-form-label">2.</label>
+										<div class="ml-auto justify-content-end">
+											<button class="btn btn-outline-secondary btn-sm text-small" type="button">編輯資料</button>
+											<button class="btn btn-outline-info btn-sm ml-2" type="button">取消新增</button>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label>供應商編號</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>供應商名稱</label>
+										<input class="form-control form-control-sm">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label>供應商貨號</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>採購單位</label>
+										<select class="form-control form-control-sm">
+											<option>請選擇</option>
+										</select>
+									</div>
+									<div class="form-group col-md-3">
+										<label>採購別</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="自營"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="寄售"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+										</div>
+									</div>
+									<div class="form-group col-md-3">
+										<label>退貨協議</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="可以退貨"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="不可退貨"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label>最小採購量</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>最大採購量</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>捨入設定檔</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>新品優惠合約</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="有"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="無"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label>超量交貨允差%</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>超收無限制</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+										</div>
+									</div>
+									<div class="form-group col-md-3">
+										<label>固定供應商</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val1" id="inlineRadio1" label="是"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+											<div class="form-check form-check-inline">
+												<p-radioButton name="groupname" value="val2" id="inlineRadio2" label="否"
+													styleClass="form-check-input" labelStyleClass="form-check-label"></p-radioButton>
+											</div>
+										</div>
+									</div>
+									<div class="form-group col-md-3">
+										<label>固定供應商生效日</label>
+										<p-calendar dateFormat="yy/mm/dd"
+											inputStyleClass="form-control form-control-sm" [inputStyle]="{'width': '100%'}"
+											[style]="{'width':'100%'}"></p-calendar>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<label>採購淨價</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>價格單位</label>
+										<input class="form-control form-control-sm">
+									</div>
+									<div class="form-group col-md-3">
+										<label>採購幣別</label>
+										<select class="form-control form-control-sm">
+											<option>請選擇</option>
+										</select>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
 </div>
