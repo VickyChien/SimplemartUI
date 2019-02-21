@@ -372,3 +372,16 @@ table .btn-outline-primary {
     background-color: #aed3fc;
 }
 */
+
+.panel {
+    border: 1px solid #F4EBF8;
+    border-radius: 0.25rem;
+    padding: 1px 6px;
+    background-color: #F4EBF8;
+    margin-bottom:20px;
+}
+
+.panel .panel-header{
+    background-color: #F4EBF8;
+    padding:5px 10px;
+}

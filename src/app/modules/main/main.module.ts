@@ -6,6 +6,7 @@ import { SupplierDetailComponent } from './components/supplier/supplier-detail.c
 import { SupplierEditComponent } from './components/supplier/supplier-edit.component';
 import { SupplierValidComponent } from './components/supplier/supplier-valid.component';
 import { SupplierQueryComponent } from './components/supplier/supplier-query.component';
+import { GoodsEditComponent } from './components/goods/goods-edit.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -14,7 +15,8 @@ import { SharedModule } from "../../shared/shared.module"
         SupplierDetailComponent,
         SupplierEditComponent,
         SupplierValidComponent,
-        SupplierQueryComponent
+        SupplierQueryComponent,
+        GoodsEditComponent
     ],
     imports: [
       CommonModule,
@@ -24,6 +26,7 @@ import { SharedModule } from "../../shared/shared.module"
         { path: 'SupplierEdit', component: SupplierEditComponent },
         { path: 'SupplierValid', component: SupplierValidComponent },
         { path: 'SupplierQuery', component: SupplierQueryComponent },
+        { path: 'GoodsEdit', component: GoodsEditComponent },
       ])
     ]
   })
