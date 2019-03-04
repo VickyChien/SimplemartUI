@@ -4,6 +4,25 @@
             <div class="card-header">發票內容
             </div>
             <div class="card-body">
+                <h5 class="text-warning">供應商資料</h5>
+                <table class="table table-bordered table-sm table-view">
+                    <tbody>
+                        <tr>
+                            <td class="td-view" style="width:100px;">統一編號</td>
+                            <td style="width:20%">12656354</td>
+                            <td class="td-view" style="width:100px;">供應商</td>
+                            <td>12656444 金財通商務科技(股)</td>
+                            <td class="td-view" style="width:100px;">公司代碼</td>
+                            <td>T100 三商家購</td>
+                        </tr>
+                        <tr>
+                            <td class="td-view">聯絡人</td>
+                            <td>吳小美 02-22571234</td>
+                            <td class="td-view">E-Mail</td>
+                            <td colspan="3">abc@bankpro.com.tw</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <h5 class="text-warning">發票資料</h5>
                 <table class="table table-bordered table-sm table-view">
                     <tbody>
@@ -72,44 +91,100 @@
                         </tr>
                     </tbody>
                 </table>
-                <h5 class="text-warning">供應商資料</h5>
-                <table class="table table-bordered table-sm table-view">
-                    <tbody>
-                        <tr>
-                            <td class="td-view" style="width:100px;">統一編號</td>
-                            <td style="width:20%">12656354</td>
-                            <td class="td-view" style="width:100px;">供應商</td>
-                            <td>12656444 金財通商務科技(股)</td>
-                            <td class="td-view" style="width:100px;">公司代碼</td>
-                            <td>T100 三商家購</td>
-                        </tr>
-                        <tr>
-                            <td class="td-view">聯絡人</td>
-                            <td>吳小美 02-22571234</td>
-                            <td class="td-view">E-Mail</td>
-                            <td colspan="3">abc@bankpro.com.tw</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+
                 <h5 class="text-warning">發票明細</h5>
                 <div style="max-height: 250px; overflow-y:auto;">
                     <table class="table table-bordered table-sm table-view table-hover text-small">
                         <thead>
                             <tr>
                                 <th class="text-center td-view" style="width:50px;">#</th>
-                                <th class="td-view">訂單編號
+                                <th class="td-view" style="width:140px;">訂單編號
                                 </th>
                                 <th class="td-view" style="width:50px;">項次
                                 </th>
-                                <th class="td-view">商品編號
+                                <th class="td-view" style="width:120px;">商品編號
                                 </th>
                                 <th class="td-view">商品名稱
                                 </th>
-                                <th class="td-view">數量
+                                <th class="td-view" style="width:80px;">數量
                                 </th>
-                                <th class="td-view">單位
+                                <th class="td-view" style="width:50px;">單位
                                 </th>
-                                <th class="td-view">驗收日期
+                                <th class="td-view" style="width:100px;">驗收日期
+                                </th>
+                                <th class="td-view text-right">金額
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>20192223456789</td>
+                                <td>1</td>
+                                <td>8851234591</td>
+                                <td>亦美小泡芙6入</td>
+                                <td>24</td>
+                                <td>箱</td>
+                                <td>2019/02/23</td>
+                                <td class="text-right">1,346</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h5 class="text-warning">退貨折讓</h5>
+                <table class="table table-bordered table-sm table-view">
+                    <tbody>
+                        <tr>
+                            <td class="td-view" style="width:100px;">折讓號碼</td>
+                            <td style="width:20%">1905300001 </td>
+                            <td class="td-view" style="width:100px;">折讓日期</td>
+                            <td style="width:20%">2019/01/24</td>
+                            <td class="td-view">發票狀態</td>
+                            <td>已開立</td>
+
+                        </tr>
+                        <tr>
+                            <td class="td-view">未稅金額</td>
+                            <td>654</td>
+                            <td class="td-view">折讓稅額</td>
+                            <td>33</td>
+                            <td class="td-view">折讓金額</td>
+                            <td>687</td>
+                        </tr>
+                        <tr>
+                            <td class="td-view">格式代號</td>
+                            <td>23</td>
+                            <td class="td-view">扣抵代號</td>
+                            <td>1 可扣抵進貨及費用</td>
+                            <td class="td-view" style="width:100px;">發票歸屬</td>
+                            <td>1 應稅使用</td>
+                        </tr>
+                        <tr>
+                            <td class="td-view">稅碼</td>
+                            <td colspan="5">V1 21進項稅額-應稅5%(三聯式發票/電子計算機發票扣抵聯)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5 class="text-warning">退貨折讓明細</h5>
+                <div style="max-height: 250px; overflow-y:auto;">
+                    <table class="table table-bordered table-sm table-view table-hover text-small">
+                        <thead>
+                            <tr>
+                                <th class="text-center td-view" style="width:50px;">#</th>
+                                <th class="td-view" style="width:140px;">訂單編號
+                                </th>
+                                <th class="td-view" style="width:50px;">項次
+                                </th>
+                                <th class="td-view" style="width:120px;">商品編號
+                                </th>
+                                <th class="td-view">商品名稱
+                                </th>
+                                <th class="td-view" style="width:80px;">退貨數量
+                                </th>
+                                <th class="td-view" style="width:50px;">單位
+                                </th>
+                                <th class="td-view" style="width:100px;">退貨日期
                                 </th>
                                 <th class="td-view text-right">金額
                                 </th>
