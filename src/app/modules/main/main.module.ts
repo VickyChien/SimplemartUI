@@ -8,6 +8,7 @@ import { SupplierValidComponent } from './components/supplier/supplier-valid.com
 import { SupplierQueryComponent } from './components/supplier/supplier-query.component';
 import { GoodsEditComponent } from './components/goods/goods-edit.component';
 import { GoodsSupplierEditComponent } from './components/goods/goods-supplier-edit.component';
+import { GoodsSupplierViewComponent } from './components/goods/goods-supplier-view.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -18,7 +19,8 @@ import { SharedModule } from "../../shared/shared.module"
         SupplierValidComponent,
         SupplierQueryComponent,
         GoodsEditComponent,
-        GoodsSupplierEditComponent
+        GoodsSupplierEditComponent,
+        GoodsSupplierViewComponent
     ],
     imports: [
       CommonModule,
@@ -30,6 +32,7 @@ import { SharedModule } from "../../shared/shared.module"
         { path: 'SupplierQuery', component: SupplierQueryComponent },
         { path: 'GoodsEdit', component: GoodsEditComponent },
         { path: 'GoodsSupplierEdit', component: GoodsSupplierEditComponent },
+        { path: 'GoodsSupplierView', component: GoodsSupplierViewComponent },
       ])
     ]
   })
