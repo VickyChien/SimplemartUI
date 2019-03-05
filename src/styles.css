@@ -345,6 +345,10 @@ table .btn-outline-primary {
     font-size: 0.9em !important;
 }
 
+.text-before {
+    color: red;
+}
+
 /*
 .btn-back {
     border-radius: 0.25rem;
@@ -378,10 +382,10 @@ table .btn-outline-primary {
     border-radius: 0.25rem;
     padding: 1px 6px;
     background-color: #F4EBF8;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.panel .panel-header{
+.panel .panel-header {
     background-color: #F4EBF8;
-    padding:5px 10px;
+    padding: 5px 10px;
 }
