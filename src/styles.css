@@ -3,7 +3,7 @@ body {
     margin-bottom: 20px;
 }
 
-html, body, table, .ui-button-text, .ui-dialog-title {
+html, body, table, .ui-button-text, .ui-dialog-title, .ui-dialog-content {
     font-family: 微軟正黑體, Arial;
 }
 
@@ -388,4 +388,14 @@ table .btn-outline-primary {
 .panel .panel-header {
     background-color: #F4EBF8;
     padding: 5px 10px;
+}
+
+.ui-dialog-titlebar {
+    background: #3E3A3A;
+    color: white;
+    padding: 0.5em 1em !important;
+}
+
+.ui-dialog-footer{
+    background-color: #eee;
 }

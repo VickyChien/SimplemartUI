@@ -30,6 +30,9 @@
               <p-radioButton name="annObj" value="9" label="指定供應商" styleClass="form-check-input"
                 labelStyleClass="form-check-label" (click)="showDialog()"></p-radioButton>
             </div>
+            <a href="javascript:;" class="badge badge-secondary" style="color:white;">
+              <i class="fa fa-list"></i>
+              供應商 (5) </a>
           </div>
         </div>
         <div class="form-row align-items-center">
@@ -49,15 +52,74 @@
         <p-fileUpload #imageUpload multiple="multiple" accept="image/*" maxFileSize="10000000"
           [showUploadButton]="false" chooseLabel="選擇檔案" cancelLabel="清除已選擇檔案" [previewWidth]="250">
         </p-fileUpload>
-        <p-dialog header="選擇供應商" [(visible)]="display">
 
-          Content
+        <!--選擇供應商-->
+        <p-dialog header="選擇供應商" styleClass="dialog-header" [modal]="true" [style]="{width: '700px', minWidth: '400px'}"
+          [(visible)]="display">
+
+          <div class="form-row align-items-center">
+            <label class="col-md-2 col-form-label">供應商編號</label>
+            <div class="col-md-4">
+              <input class="form-control form-control-sm">
+            </div>
+            <label class="col-md-5 col-form-label text-primary">金財通商務科技(股)</label>
+            <div class="col-md-1">
+              <a href="javascript:;" class="badge badge-secondary pull-right" style="color:white;">加入 <i
+                  class="fa fa-plus"></i></a>
+            </div>
+          </div>
+          <div class="mx-2">
+            <a href="javascript:;" class="badge badge-secondary pull-right my-2" style="color:white;">勾選移除 <i
+                class="fa fa-minus"></i></a>
+          </div>
+          <table class="table table-bordered table-sm table-view table-hover text-small">
+            <thead>
+              <tr>
+                <th class="text-center td-view" style="width:50px;">#</th>
+                <th class="text-center td-view" style="width:50px;">
+                  <p-checkbox name="groupname" value="val1"></p-checkbox>
+                </th>
+                <th class="td-view">供應商編號
+                  <i class="fa fa-sort"></i>
+                </th>
+                <th class="td-view">供應商名稱
+                  <i class="fa fa-sort"></i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td class="text-center">
+                  <p-checkbox name="groupname" value="val1"></p-checkbox>
+                </td>
+                <td>S00111</td>
+                <td>供應商一</td>
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td class="text-center">
+                  <p-checkbox name="groupname" value="val1"></p-checkbox>
+                </td>
+                <td>2486145</td>
+                <td>供應商二</td>
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td class="text-center">
+                  <p-checkbox name="groupname" value="val1"></p-checkbox>
+                </td>
+                <td>5762414</td>
+                <td>供應商三</td>
+              </tr>
+            </tbody>
+          </table>
           <p-footer>
             <button type="button" pButton icon="pi pi-check" (click)="display=false" label="確定"></button>
-            <button type="button" pButton icon="fa fa-close" (click)="display=false" label="取消"
-              class="ui-button-secondary"></button>
           </p-footer>
         </p-dialog>
+        <!--選擇供應商-->
+
       </div>
       <div class="card-footer">
         <div class="form-row justify-content-end align-items-center">
