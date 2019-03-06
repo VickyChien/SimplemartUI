@@ -1,0 +1,87 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">公告內容
+      </div>
+      <div class="card-body">
+        <h4 class="annOrgTitle">資訊部公告
+          <span class="info pull-right">
+            <i class="fa fa-calendar"></i>
+            2019/03/06~2019/06/30
+          </span>
+        </h4>
+        <h4 class="annTitle"><i class="fa fa-bullhorn"></i>&nbsp;
+          請大家盡快測試SCM系統
+          <span class="text-danger">(已刪除)</span>
+        </h4>
+        <div class="jumbotron annContent">
+          <!--公告內容-->
+          公告內容<br>
+          公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容公告內容<br>
+          公告內容<br>
+          公告內容<br>
+          公告內容<br>
+          公告內容<br>
+          公告內容<br>
+
+          <!--公告附件-->
+          <ul>
+            <li><i class="fa fa-download"></i>&nbsp;<a href="javascript:;">公告附件一.pdf</a></li>
+            <li><i class="fa fa-download"></i>&nbsp;<a href="javascript:;">公告附件二.pdf</a></li>
+          </ul>
+        </div>
+        <!--<div><i class="fa fa-user-o"></i>&nbsp;公告對象：全公司</div>-->
+        <div><i class="fa fa-user-o"></i>&nbsp;公告對象：<a href="javascript:;" (click)="showDialog()">指定供應商</a></div>
+        <div class="pull-right text-warning text-little"><i class="fa fa-clock-o"></i>
+          2019/03/02 11:22:33</div>
+
+
+        <!--指定供應商-->
+        <p-dialog header="指定供應商" styleClass="dialog-header" [modal]="true" [style]="{width: '700px', minWidth: '400px'}"
+          [(visible)]="display">
+          <table class="table table-bordered table-sm table-view table-hover text-small">
+            <thead>
+              <tr>
+                <th class="text-center td-view" style="width:50px;">#</th>
+                <th class="td-view">供應商編號
+                  <i class="fa fa-sort"></i>
+                </th>
+                <th class="td-view">供應商名稱
+                  <i class="fa fa-sort"></i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td>S00111</td>
+                <td>供應商一</td>
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td>2486145</td>
+                <td>供應商二</td>
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td>5762414</td>
+                <td>供應商三</td>
+              </tr>
+            </tbody>
+          </table>
+          <p-footer>
+            <button type="button" pButton icon="pi pi-check" (click)="display=false" label="關閉"></button>
+          </p-footer>
+        </p-dialog>
+        <!--指定供應商-->
+      </div>
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">公告編輯</button>
+          <button type="button" class="btn btn-secondary mr-2">公告刪除</button>
+          <button type="button" class="btn btn-outline-secondary">回上一頁</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

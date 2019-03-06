@@ -206,6 +206,42 @@ h3 {
     padding: 6px;
 }
 
+.annOrgTitle {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #A7017A;
+    padding: 0.3em;
+    border-bottom: 2px solid #A7017A;
+}
+
+.annOrgTitle .info {
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-left: 3em;
+}
+
+.annTitle {
+    margin: 1em 0.3em;
+    font-size: 1.4em;
+    color: #883677;
+    font-weight: bold;
+}
+
+.annContent {
+    background-color: #F4EBF8;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.annContent ul {
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+    padding-top: 1em;
+    list-style-type: none;
+    border-top: 1px dashed #cccccc;
+}
+
 /*
 .required {
     border-color: red;
@@ -396,6 +432,6 @@ table .btn-outline-primary {
     padding: 0.5em 1em !important;
 }
 
-.ui-dialog-footer{
+.ui-dialog-footer {
     background-color: #eee;
 }
