@@ -233,13 +233,47 @@ h3 {
     margin-bottom: 1em;
 }
 
-.annContent ul {
+/*
+.annContent ul, .contSupReply ul, .contInnerReply ul {
     margin: 0;
     margin-top: 2em;
     padding: 0;
     padding-top: 1em;
     list-style-type: none;
     border-top: 1px dashed #cccccc;
+}
+*/
+
+.ulContent {
+    margin: 2em 0 2em 0;
+    padding: 0;
+    padding-top: 1em;
+    list-style-type: none;
+    border-top: 1px dashed #cccccc;
+}
+
+.ulContent li {
+    margin-bottom: 5px;
+}
+
+.contSupReply {
+    background-color: #FCF9F1;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.25rem;
+}
+
+.contInnerReply {
+    background-color: #F4EBF8;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.25rem;
+}
+
+.contReply {
+    background-color: #F8F9FB;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 /*

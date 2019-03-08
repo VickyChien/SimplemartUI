@@ -7,6 +7,7 @@ import { AnnQueryComponent } from './components/announce/ann-query.component';
 import { AnnViewComponent } from './components/announce/ann-view.component';
 import { ConEditComponent } from './components/contract/con-edit.component';
 import { ConQueryComponent } from './components/contract/con-query.component';
+import { ConViewComponent } from './components/contract/con-view.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -17,6 +18,7 @@ import { SharedModule } from "../../shared/shared.module"
     AnnViewComponent,
     ConEditComponent,
     ConQueryComponent,
+    ConViewComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +29,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'AnnView', component: AnnViewComponent },
       { path: 'ConEdit', component: ConEditComponent },
       { path: 'ConQuery', component: ConQueryComponent },
+      { path: 'ConView', component: ConViewComponent },
     ])
   ]
 })

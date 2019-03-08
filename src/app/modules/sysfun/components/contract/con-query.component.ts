@@ -11,4 +11,9 @@ export class ConQueryComponent implements OnInit {
   ngOnInit() {
   }
 
+  display: boolean = false;
+
+  showDialog() {
+    this.display = true;
+  }
 }
