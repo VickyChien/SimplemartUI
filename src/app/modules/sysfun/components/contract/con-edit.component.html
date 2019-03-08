@@ -4,11 +4,18 @@
       <div class="card-header">草約上傳</div>
       <div class="card-body">
         <div class="form-row align-items-center">
-          <label class="col-md-auto col-form-label">供應商編號</label>
+          <label class="col-md-2 col-form-label">供應商編號</label>
           <div class="col-md-2">
             <input class="form-control form-control-sm">
           </div>
           <label class="col-md-6 col-form-label text-primary">金財通商務科技(股)</label>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label">合約期間</label>
+          <div class="col-md-6">
+            <input class="form-control form-control-sm">
+          </div>
+
         </div>
         <h5 class="text-warning mt-2">草約上傳</h5>
         <p-fileUpload #excelUpload customUpload="true" chooseLabel="選擇檔案" uploadLabel="上傳" [showCancelButton]="false"

@@ -1,0 +1,102 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">
+        合約查詢 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete formControlName="supCode" inputStyleClass="form-control form-control-sm"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+          <label class="col-md-2 col-form-label text-right">合約期間</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">供應商回應狀態</label>
+          <div class="col-md-3">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+              <option>已瀏覽</option>
+              <option>已回應</option>
+            </select>
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">合約處理狀態</label>
+          <div class="col-md-3">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+              <option>未結案</option>
+              <option>已結案</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">查詢</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!--其他功能按鈕-->
+  <div class="form-row justify-content-end align-items-center my-2 mx-2">
+    <input type="button" class="btn btn-success" value="新增合約" />
+  </div>
+  <!--DataGrid-->
+  <div>
+    <table class="table table-bordered table-sm table-view table-hover text-small">
+      <thead>
+        <tr>
+          <th class="text-center td-view" style="width:50px;">#</th>
+          <th class="td-view">異動日期
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商編號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商名稱
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">合約期間
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view" style="width:60px;">瀏覽
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view" style="width:60px;">回應
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view" style="width:60px;">狀態
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="text-center td-view" style="width:80px;">內容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">123</td>
+          <td class="text-little py-0">2019/03/05 12:34:56</td>
+          <td>12656354</td>
+          <td class="text-little py-0">金財通商務科技(股)</td>
+          <td>2019/04/01~2020/03/31</td>
+          <td>已瀏覽</td>
+          <td>未回應</td>
+          <td>未結案</td>
+          <td class="text-center">
+            <button type="button" class="btn btn-outline-primary">內容</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
