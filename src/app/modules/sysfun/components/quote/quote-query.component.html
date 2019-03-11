@@ -1,0 +1,84 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">
+        商品詢報議查詢 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete formControlName="supCode" inputStyleClass="form-control form-control-sm"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+          <label class="col-md-2 col-form-label text-right">商品</label>
+          <div class="col-md-4">
+              <p-autoComplete formControlName="goodsCode" inputStyleClass="form-control form-control-sm"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">商品名稱</label>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發布日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+          <label class="col-md-2 col-form-label text-right">公告日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">查詢</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!--其他功能按鈕-->
+  <div class="form-row justify-content-end align-items-center my-2 mx-2">
+    <input type="button" class="btn btn-success" value="新增公告" />
+  </div>
+  <!--DataGrid-->
+  <div>
+    <table class="table table-bordered table-sm table-view table-hover text-small">
+      <thead>
+        <tr>
+          <th class="text-center td-view" style="width:50px;">#</th>
+          <th class="td-view">公告單位
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">發布日期
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">公告期間
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">公告標題
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="text-center td-view" style="width:80px;">內容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">123</td>
+          <td>資訊部</td>
+          <td>2019/03/05 14:23:45</td>
+          <td>2019/03/05~2019/06/30</td>
+          <td>請大家盡快測試SCM系統</td>
+          <td class="text-center">
+            <button type="button" class="btn btn-outline-primary">內容</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
