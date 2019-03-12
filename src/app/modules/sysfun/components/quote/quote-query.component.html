@@ -7,27 +7,31 @@
       </div>
       <div class="card-body">
         <div class="form-row align-items-center">
-          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <label class="col-md-2 col-form-label text-right">供應商編號</label>
           <div class="col-md-4">
-            <p-autoComplete formControlName="supCode" inputStyleClass="form-control form-control-sm"
+            <p-autoComplete field="supCode" inputStyleClass="form-control form-control-sm"
               [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
             <label class="text-info ml-2">供應商名稱</label>
           </div>
-          <label class="col-md-2 col-form-label text-right">商品</label>
+          <label class="col-md-2 col-form-label text-right">商品編號</label>
           <div class="col-md-4">
-              <p-autoComplete formControlName="goodsCode" inputStyleClass="form-control form-control-sm"
+              <p-autoComplete field="goodsCode" inputStyleClass="form-control form-control-sm"
               [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
             <label class="text-info ml-2">商品名稱</label>
           </div>
         </div>
         <div class="form-row align-items-center">
-          <label class="col-md-2 col-form-label text-right">發布日期</label>
-          <div class="col-md-3">
+          <label class="col-md-2 col-form-label text-right">詢價日期</label>
+          <div class="col-md-4">
             <input class="form-control form-control-sm">
           </div>
-          <label class="col-md-2 col-form-label text-right">公告日期</label>
-          <div class="col-md-3">
-            <input class="form-control form-control-sm">
+          <label class="col-md-2 col-form-label text-right">詢價狀態</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+              <option>已結案</option>
+              <option>已刪除</option>
+            </select>
           </div>
 
         </div>
@@ -43,7 +47,7 @@
   </form>
   <!--其他功能按鈕-->
   <div class="form-row justify-content-end align-items-center my-2 mx-2">
-    <input type="button" class="btn btn-success" value="新增公告" />
+    <input type="button" class="btn btn-success" value="新增詢價" />
   </div>
   <!--DataGrid-->
   <div>

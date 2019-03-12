@@ -10,6 +10,7 @@ import { GoodsEditComponent } from './components/goods/goods-edit.component';
 import { GoodsSupplierEditComponent } from './components/goods/goods-supplier-edit.component';
 import { GoodsSupplierViewComponent } from './components/goods/goods-supplier-view.component';
 import { GoodsEditSignViewComponent } from './components/goods/goods-edit-signview.component';
+import { GoodsViewComponent } from './components/goods/goods-view.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -22,7 +23,8 @@ import { SharedModule } from "../../shared/shared.module"
         GoodsEditComponent,
         GoodsSupplierEditComponent,
         GoodsSupplierViewComponent,
-        GoodsEditSignViewComponent
+        GoodsEditSignViewComponent,
+        GoodsViewComponent
     ],
     imports: [
       CommonModule,
@@ -36,6 +38,7 @@ import { SharedModule } from "../../shared/shared.module"
         { path: 'GoodsSupplierEdit', component: GoodsSupplierEditComponent },
         { path: 'GoodsSupplierView', component: GoodsSupplierViewComponent },
         { path: 'GoodsEditSignView', component: GoodsEditSignViewComponent },
+        { path: 'GoodsView', component: GoodsViewComponent },
       ])
     ]
   })
