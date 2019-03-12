@@ -9,14 +9,14 @@
         <div class="form-row align-items-center">
           <label class="col-md-2 col-form-label text-right">供應商編號</label>
           <div class="col-md-4">
-            <p-autoComplete field="supCode" inputStyleClass="form-control form-control-sm"
-              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <p-autoComplete field="supCode" inputStyleClass="form-control form-control-sm" [style]="{'width':'120px'}"
+              maxlength="10"></p-autoComplete>
             <label class="text-info ml-2">供應商名稱</label>
           </div>
           <label class="col-md-2 col-form-label text-right">商品編號</label>
           <div class="col-md-4">
-              <p-autoComplete field="goodsCode" inputStyleClass="form-control form-control-sm"
-              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <p-autoComplete field="goodsCode" inputStyleClass="form-control form-control-sm" [style]="{'width':'120px'}"
+              maxlength="10"></p-autoComplete>
             <label class="text-info ml-2">商品名稱</label>
           </div>
         </div>
@@ -29,6 +29,7 @@
           <div class="col-md-2">
             <select class="form-control form-control-sm">
               <option>全部</option>
+              <option>未結案</option>
               <option>已結案</option>
               <option>已刪除</option>
             </select>
@@ -55,16 +56,22 @@
       <thead>
         <tr>
           <th class="text-center td-view" style="width:50px;">#</th>
-          <th class="td-view">公告單位
+          <th class="td-view">詢價日期
             <i class="fa fa-sort"></i>
           </th>
-          <th class="td-view">發布日期
+          <th class="td-view">商品編號
             <i class="fa fa-sort"></i>
           </th>
-          <th class="td-view">公告期間
+          <th class="td-view">商品名稱
             <i class="fa fa-sort"></i>
           </th>
-          <th class="td-view">公告標題
+          <th class="td-view">供應商編號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商名稱
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">報價狀態
             <i class="fa fa-sort"></i>
           </th>
           <th class="text-center td-view" style="width:80px;">內容</th>
@@ -73,10 +80,12 @@
       <tbody>
         <tr>
           <td class="text-center">123</td>
-          <td>資訊部</td>
-          <td>2019/03/05 14:23:45</td>
-          <td>2019/03/05~2019/06/30</td>
-          <td>請大家盡快測試SCM系統</td>
+          <td>2019/03/12 14:23:57</td>
+          <td>12087692</td>
+          <td>孔雀小圓餅香濃雞蛋50g</td>
+          <td>200123</td>
+          <td>乖乖股份有限公司</td>
+          <td>已報價</td>
           <td class="text-center">
             <button type="button" class="btn btn-outline-primary">內容</button>
           </td>

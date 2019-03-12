@@ -10,9 +10,24 @@
           </div>
           <label class="col-md-5 col-form-label text-primary">海尼根啤酒</label>
         </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">詢價備註</label>
+          <div class="col-md-6">
+            <textarea class="form-control form-control-sm"></textarea>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">附件上傳</label>
+          <div class="col-md-8">
+            <p-fileUpload #excelUpload customUpload="true" chooseLabel="選擇檔案" uploadLabel="上傳"
+              [showCancelButton]="false" maxFileSize="10000000">
+            </p-fileUpload>
+          </div>
+        </div>
 
         <!--選擇供應商-->
-        <div class="form-row align-items-center">
+        <h5 class="text-warning mt-3">選擇供應商</h5>
+        <div class="contSupReply from-group row align-items-center mx-1">
           <label class="col-md-2 col-form-label text-right">供應商編號</label>
           <div class="col-md-2">
             <input class="form-control form-control-sm">
