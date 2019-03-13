@@ -10,6 +10,7 @@ import { ConQueryComponent } from './components/contract/con-query.component';
 import { ConViewComponent } from './components/contract/con-view.component';
 import { QuoteInquiryComponent } from './components/quote/quote-inquiry.component';
 import { QuoteQueryComponent } from './components/quote/quote-query.component';
+import { QuoteBargainComponent } from './components/quote/quote-bargain.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -23,6 +24,7 @@ import { SharedModule } from "../../shared/shared.module"
     ConViewComponent,
     QuoteInquiryComponent,
     QuoteQueryComponent,
+    QuoteBargainComponent,
   ],
   imports: [
     CommonModule,
@@ -36,6 +38,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'ConView', component: ConViewComponent },
       { path: 'QuoteInquiry', component: QuoteInquiryComponent },
       { path: 'QuoteQuery', component: QuoteQueryComponent },
+      { path: 'QuoteBargain', component: QuoteBargainComponent },
     ])
   ]
 })
