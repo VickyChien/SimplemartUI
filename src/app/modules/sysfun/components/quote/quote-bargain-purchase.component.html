@@ -1,0 +1,173 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">商品報價議價-採購人員
+      </div>
+      <div class="card-body">
+        <h4 class="annOrgTitle">12987642 悅氏檸檬紅茶2L
+          <!--若已結案才顯示-->
+          <label class="ml-2"><span class="badge badge-secondary">已結案</span></label>
+          <!--詢價日期-->
+          <span class="info pull-right">
+            <i class="fa fa-clock-o"></i>
+            詢價日期：2019/03/13 16:23:56
+          </span>
+        </h4>
+
+        <!--供應商編號+名稱-->
+        <h5 class="mt-4"><span class="badge badge-info">10005 台灣比爾文化股份有限公司</span></h5>
+        <!--報價議價紀錄-->
+        <table class="table table-bordered table-sm table-view table-hover text-small">
+          <thead>
+            <tr>
+              <th class="td-view" style="width:90px;">報價時間</th>
+              <th class="td-view" style="width:120px;">報價金額</th>
+              <th class="td-view" style="width:250px;">報價備註</th>
+              <th class="td-view" style="width:90px;">議價時間</th>
+              <th class="td-view" style="width:120px;">議價金額</th>
+              <th class="td-view" style="min-width:100px;">議價備註</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bgQuote text-little">2019/03/15 11:34:56</td>
+              <td class="bgQuote text-danger">台幣 100
+                <i class="fa fa-check-circle text-success"></i>
+                <div>
+                  <button type="button" class="btn btn-outline-primary">接受報價</button>
+                </div>
+              </td>
+              <td class="bgQuote">
+              </td>
+              <td class="text-little"></td>
+              <td>
+                <button type="button" class="btn btn-outline-primary" (click)="showDialog()">進行議價</button>
+              </td>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--供應商編號+名稱-->
+        <h5 class="mt-4"><span class="badge badge-info">20011 旺來旺食品股份有限公司</span></h5>
+        <!--報價議價紀錄-->
+        <table class="table table-bordered table-sm table-view table-hover text-small">
+          <thead>
+            <tr>
+              <th class="td-view" style="width:90px;">報價時間</th>
+              <th class="td-view" style="width:120px;">報價金額</th>
+              <th class="td-view" style="width:250px;">報價備註</th>
+              <th class="td-view" style="width:90px;">議價時間</th>
+              <th class="td-view" style="width:120px;">議價金額</th>
+              <th class="td-view" style="min-width:100px;">議價備註</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bgQuote text-little">2019/03/15 11:34:56</td>
+              <td class="bgQuote text-danger">台幣 100
+                <i class="fa fa-check-circle text-success"></i>
+                <div>
+                  <button type="button" class="btn btn-outline-primary">接受報價</button>
+                </div>
+              </td>
+              <td class="bgQuote">
+                不能再低了
+              </td>
+              <td class="text-little">
+
+              </td>
+              <td>
+                <button type="button" class="btn btn-outline-primary" (click)="showDialog()">進行議價</button>
+              </td>
+              <td>
+              </td>
+            </tr>
+            <tr>
+              <td class="bgQuote text-little">2019/03/15 11:34:56</td>
+              <td class="bgQuote text-danger">台幣 123.5</td>
+              <td class="bgQuote">
+                已經很便宜了
+                <ul class="ulInline">
+                  <li><a href="javascript:;">附件一.pdf</a></li>
+                  <li><a href="javascript:;">附件二附件附件.docx</a></li>
+                </ul>
+              </td>
+              <td class="text-little">2019/03/15 11:34:56</td>
+              <td>台幣 95
+              </td>
+              <td>
+                報價備註，報價備註我是備註我真的是備註
+              </td>
+            </tr>
+            <tr>
+              <td class="bgQuote text-little">2019/03/14 13:29:23</td>
+              <td class="bgQuote text-danger">台幣 150</td>
+              <td class="bgQuote">
+              </td>
+              <td class="text-little">2019/03/14 14:54:03</td>
+              <td>台幣 95
+
+              </td>
+              <td>
+                好貴喔95可以嗎
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!--未回應供應商-->
+        <h5 class="text-warning">以下供應商未回應</h5>
+        <h5 class="mt-2"><span class="badge badge-warning">20002 揚格食品股份有限公司</span></h5>
+        <h5 class="mt-2"><span class="badge badge-warning">20010 拓璞有限公司</span></h5>
+
+        <!--採購人員議價-->
+        <p-dialog header="進行議價" styleClass="dialog-header" [modal]="true" [style]="{width: '700px', minWidth: '400px'}"
+          [(visible)]="display">
+          <h5>
+            <span class="badge badge-info">10005 台灣比爾文化股份有限公司</span>
+            <span class="badge badge-danger ml-3">台幣 100</span>
+          </h5>
+          <div class="jumbotron contReply">
+            <div class="form-group row align-items-center">
+              <label class="col-md-3 col-form-label text-right">議價金額(未稅)</label>
+              <div class="col-md-4">
+                <input class="form-control form-control-sm">
+              </div>
+              <label class="col-md-2 col-form-label text-right">報價幣別</label>
+              <div class="col-md-3">
+                <select class="form-control form-control-sm"></select>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-md-3 col-form-label text-right">報價備註</label>
+              <div class="col-md-9">
+                <textarea class="form-control form-control-sm"></textarea>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-md-3 col-form-label text-right">附件上傳</label>
+              <div class="col-md-9">
+                <p-fileUpload #excelUpload customUpload="true" chooseLabel="選擇檔案" uploadLabel="上傳"
+                  [showCancelButton]="false" maxFileSize="10000000">
+                </p-fileUpload>
+              </div>
+            </div>
+          </div>
+          <p-footer>
+            <button type="button" pButton icon="pi pi-check" (click)="display=false" label="送出議價"></button>
+            <button type="button" pButton icon="fa fa-close" (click)="display=false" label="關閉"></button>
+          </p-footer>
+        </p-dialog>
+
+      </div>
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="submit" class="btn btn-primary mr-2">結案</button>
+          <button type="submit" class="btn btn-secondary mr-2">刪除</button>
+          <button type="button" class="btn btn-outline-secondary">回上一頁</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -5,6 +5,9 @@
       </div>
       <div class="card-body">
         <h4 class="annOrgTitle">12987642 悅氏檸檬紅茶2L
+          <!--若已結案才顯示-->
+          <label class="ml-2"><span class="badge badge-secondary">已結案</span></label>
+          <!--詢價日期-->
           <span class="info pull-right">
             <i class="fa fa-clock-o"></i>
             詢價日期：2019/03/13 16:23:56
@@ -16,36 +19,71 @@
         <table class="table table-bordered table-sm table-view table-hover text-small">
           <thead>
             <tr>
-              <th class="td-view" style="max-width:170px;">報價時間</th>
-              <th class="td-view" style="min-width:80px;">報價金額</th>
-              <th class="td-view" style="min-width:50px;">幣別</th>
-              <th class="td-view" style="min-width:100px;">報價備註</th>
-              <th class="td-view" style="max-width:170px;">議價時間</th>
-              <th class="td-view" style="min-width:80px;">議價金額</th>
-              <th class="td-view" style="min-width:50px;">幣別</th>
+              <th class="td-view" style="width:90px;">報價時間</th>
+              <th class="td-view" style="width:120px;">報價金額</th>
+              <th class="td-view" style="width:250px;">報價備註</th>
+              <th class="td-view" style="width:90px;">議價時間</th>
+              <th class="td-view" style="width:120px;">議價金額</th>
               <th class="td-view" style="min-width:100px;">議價備註</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>2019/03/15 11:34:56</td>
-              <td>123.5</td>
-              <td>台幣</td>
+              <td class="bgQuote text-little">2019/03/15 11:34:56</td>
+              <td class="bgQuote">台幣 100
+                <i class="fa fa-check-circle text-success"></i>
+              </td>
+              <td class="bgQuote">
+                不能再低了
+              </td>
+              <td class="text-little">2019/03/16</td>
+              <td class="text-danger">
+                台幣 95
+                <i class="fa fa-check-circle text-success"></i>
+                <div>
+                  <button type="button" class="btn btn-outline-primary">接受議價</button>
+                </div>
+              </td>
               <td>
-                報價備註，報價備註我是備註我真的是備註
+
+              </td>
+            </tr>
+
+            <tr>
+              <td class="bgQuote text-little">2019/03/15 11:34:56</td>
+              <td class="bgQuote">台幣 123.5</td>
+              <td class="bgQuote">
+                已經很便宜了
                 <ul class="ulInline">
                   <li><a href="javascript:;">附件一.pdf</a></li>
                   <li><a href="javascript:;">附件二附件附件.docx</a></li>
                 </ul>
               </td>
-              <td>2019/03/15 11:34:56</td>
-              <td>123.5</td>
-              <td>台幣</td>
+              <td class="text-little">2019/03/15 11:34:56</td>
+              <td class="text-danger">台幣 95
+                <!--<i class="fa fa-check-circle text-success"></i>-->
+              </td>
               <td>
                 報價備註，報價備註我是備註我真的是備註
-                
               </td>
             </tr>
+            <tr>
+              <td class="bgQuote text-little">2019/03/14 13:29:23</td>
+              <td class="bgQuote">台幣 150</td>
+              <td class="bgQuote">
+              </td>
+              <td class="text-little">2019/03/14 14:54:03</td>
+              <td class="text-danger">台幣 95
+                <!--<div>
+                  <button type="button" class="btn btn-outline-primary">接受議價</button>
+                </div>
+                -->
+              </td>
+              <td>
+                好貴喔95可以嗎
+              </td>
+            </tr>
+
           </tbody>
         </table>
 
@@ -76,141 +114,19 @@
               </p-fileUpload>
             </div>
           </div>
-          <div class="form-group row justify-content-end align-items-center">
-            <button type="submit" class="btn btn-primary mr-2">送出報價</button>
-            <button type="button" class="btn btn-outline-secondary">回上一頁</button>
+          <div class="form-group row">
+            <div class="col-md-11">
+              <button type="submit" class="btn btn-primary pull-right">送出報價</button>
+            </div>
           </div>
         </div>
 
 
-        <table class="table table-bordered table-sm table-view table-hover text-small">
-          <thead>
-            <tr>
-              <th class="td-view" style="width:170px;">上傳時間</th>
-              <th class="td-view" style="min-width:100px;">檔案說明</th>
-              <th class="td-view" style="min-width:100px;">檔案檢視</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2019/03/05 12:34:56</td>
-              <td>已修改部分內容，請確認</td>
-              <td><a href="javascript:;">供應商合約_金財通_20190308.pdf</a></td>
-            </tr>
-            <tr>
-              <td>2019/03/06 16:21:23</td>
-              <td>附加內容</td>
-              <td><a href="javascript:;">進出盤點表.pdf</a></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="contSupReply">
-          <!--回應者-->
-          <div class="mb-2"><i class="fa fa-user-o"></i>&nbsp;
-            <span class="text-info">金財通商務科技(股)</span>&nbsp;
-            <small>(2019/03/01 12:12:12)</small>
-          </div>
-          <!--回應內容-->
-          <div class="mx-3">
-            有才孩子……角大兒何來般；止系去了白……裡奇說大上正、以試水這電此實遠化建動子絕覺登。<br />動力一，以藝愛是，城地會怎語斯似行五影不叫支問童故願對家好用時他受那大而白裡雲告的利部。操主童力其上你共風不才，地間但車去都料！
-            <br />
-            一成那起！都腦科重化定國登的相唱業四的位造中安趣而提路的利著。
-          </div>
-          <!--回應附件-->
-          <ul class="ulContent mx-3">
-            <li><i class="fa fa-download"></i>&nbsp;<a href="javascript:;">附件一.pdf</a>
-              <span class="text-success text-small ml-3">附件一說明內容</span>
-            </li>
-            <li><i class="fa fa-download"></i>&nbsp;<a href="javascript:;">附件二.pdf</a>
-              <span class="text-success text-small ml-3">家現爸說一眼氣經好己；區強活們人，是再會至發果經發洋個學</span>
-            </li>
-          </ul>
-        </div>
-        <div class="contInnerReply">
-          <!--回應者-->
-          <div class="mb-2"><i class="fa fa-user-o"></i>&nbsp;
-            <span class="text-info">張三豐</span>&nbsp;
-            <small>(2019/03/01 16:34:32)</small>
-          </div>
-          <!--回應內容-->
-          <div class="mx-3">
-            名候中、她好解一落春的以始明沒送共得公能時！坐什要長除魚品……人不車及計銀年門山明形準人走易！知權我？我木知我好車的去，離因中爾我種國開！信整多學覺現情能行全太、一那為，以性張。香無物候夫現成思究動生，以問司三自、才呢易師臺持著國舞、多線無滿是充紙轉業康手的果布然接去國女府光親樓元。
-          </div>
-          <!--回應附件-->
-          <ul class="ulContent mx-3">
-            <li><i class="fa fa-download"></i>&nbsp;<a href="javascript:;">附件三.pdf</a></li>
-            <li><i class="fa fa-download"></i>&nbsp;<a href="javascript:;">附件四.pdf</a></li>
-          </ul>
-        </div>
-        <div class="contSupReply">
-          <!--回應者-->
-          <div class="mb-2"><i class="fa fa-user-o"></i>&nbsp;
-            <span class="text-info">金財通商務科技(股)</span>&nbsp;
-            <small>(2019/03/01 12:12:12)</small>
-          </div>
-          <!--回應內容-->
-          <div class="mx-3">
-            生辦物體感部說，不交的克來來些香。子達的民一自眼我馬慢家最維始候開為突獲軍情不地地利？
-          </div>
-        </div>
-        <div class="contSupReply">
-          <!--回應者-->
-          <div class="mb-2"><i class="fa fa-user-o"></i>&nbsp;
-            <span class="text-info">金財通商務科技(股)</span>&nbsp;
-            <small>(2019/03/01 12:12:12)</small>
-          </div>
-          <!--回應內容-->
-          <div class="mx-3">
-            大治以是了方、名油動山傳五方。明整個不到形區現廣住國血後我了為不驚朋當生知學全？生件叫力只水食時經業天合國工看！
-            <br />
-            他子理要展如媽地無錢只行的青完、子小可家行。
-            <br />
-            源奇寫舉作級四些同他的二刻城服動觀可所他河有位可男動都政老。
-          </div>
-        </div>
-        <div class="contInnerReply">
-          <!--回應者-->
-          <div class="mb-2"><i class="fa fa-user-o"></i>&nbsp;
-            <span class="text-info">張三豐</span>&nbsp;
-            <small>(2019/03/01 16:34:32)</small>
-          </div>
-          <!--回應內容-->
-          <div class="mx-3">
-            好的。
-          </div>
-        </div>
-        <!--
-        <div class="form-group row justify-content-end align-items-center">
-          <span class="text-danger mr-2">已於2019/03/02 16:23:11結案</span>
+      </div>
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
           <button type="button" class="btn btn-outline-secondary">回上一頁</button>
         </div>
--->
-        <h5 class="text-warning">回應與確認</h5>
-        <div class="jumbotron contReply">
-          <div class="form-group row align-items-center">
-            <label class="col-md-2 col-form-label text-right">回應內容</label>
-            <div class="col-md-8">
-              <textarea class="form-control form-control-sm"></textarea>
-            </div>
-          </div>
-          <div class="form-group row align-items-center">
-            <label class="col-md-2 col-form-label text-right">附件上傳</label>
-            <div class="col-md-8">
-              <p-fileUpload #excelUpload customUpload="true" chooseLabel="選擇檔案" uploadLabel="上傳"
-                [showCancelButton]="false" maxFileSize="10000000">
-              </p-fileUpload>
-            </div>
-          </div>
-          <div class="form-group row justify-content-end align-items-center">
-            <button type="submit" class="btn btn-primary mr-2">送出回應</button>
-            <button type="submit" class="btn btn-secondary mr-2">結案</button>
-            <button type="submit" class="btn btn-secondary mr-2">刪除</button>
-            <button type="button" class="btn btn-outline-secondary">回上一頁</button>
-          </div>
-        </div>
-
-
       </div>
     </div>
   </form>

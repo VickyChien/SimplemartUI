@@ -291,6 +291,10 @@ h3 {
     margin-bottom: 1em;
 }
 
+.bgQuote {
+    background-color: #FCF9F1;
+}
+
 /*
 .required {
     border-color: red;
