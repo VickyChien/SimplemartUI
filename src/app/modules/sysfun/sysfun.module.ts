@@ -12,6 +12,7 @@ import { QuoteInquiryComponent } from './components/quote/quote-inquiry.componen
 import { QuoteQueryComponent } from './components/quote/quote-query.component';
 import { QuoteBargainComponent } from './components/quote/quote-bargain.component';
 import { QuoteBargainPurchaseComponent } from './components/quote/quote-bargain-purchase.component';
+import { CgradeUploadComponent } from './components/cgrade/cgrade-upload.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -27,6 +28,7 @@ import { SharedModule } from "../../shared/shared.module"
     QuoteQueryComponent,
     QuoteBargainComponent,
     QuoteBargainPurchaseComponent,
+    CgradeUploadComponent,
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'QuoteQuery', component: QuoteQueryComponent },
       { path: 'QuoteBargain', component: QuoteBargainComponent },
       { path: 'QuoteBargainPurchase', component: QuoteBargainPurchaseComponent },
+      { path: 'CgradeUpload', component: CgradeUploadComponent },
     ])
   ]
 })
