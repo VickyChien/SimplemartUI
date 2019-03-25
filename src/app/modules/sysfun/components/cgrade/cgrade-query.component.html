@@ -1,0 +1,111 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">
+        C級品通報查詢 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete field="supCode" inputStyleClass="form-control form-control-sm" [style]="{'width':'120px'}"
+              maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+          <label class="col-md-2 col-form-label text-right">商品編號</label>
+          <div class="col-md-4">
+            <p-autoComplete field="goodsCode" inputStyleClass="form-control form-control-sm" [style]="{'width':'120px'}"
+              maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">商品名稱</label>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">通路</label>
+          <div class="col-md-3">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">預計下架日</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">查詢</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!--其他功能按鈕-->
+  <div class="form-row justify-content-end align-items-center my-2 mx-2">
+    <input type="button" class="btn btn-success" value="上傳C級品通報" />
+  </div>
+  <!--DataGrid-->
+  <div>
+    <table class="table table-bordered table-sm table-view table-hover text-small">
+      <thead>
+        <tr>
+          <th class="text-center td-view" style="width:50px;">#</th>
+          <th class="td-view">上傳時間
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商編號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商名稱
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">通路
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">商品編號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">商品名稱
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">預計下架日
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">處理方式
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="text-center td-view" style="width:80px;">內容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">123</td>
+          <td class="text-little py-0">2019/03/05 12:34:56</td>
+          <td>12656354</td>
+          <td class="text-little py-0">金財通商務科技(股)</td>
+          <td>美廉社</td>
+          <td>1000157</td>
+          <td class="text-little py-0">義美奶茶946ml</td>
+          <td>2019/04/30</td>
+          <td>出清</td>
+          <td class="text-center">
+            <button type="button" class="btn btn-outline-primary" (click)="showDialog()">內容</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p-dialog header="請輸入驗證碼" styleClass="dialog-header" [modal]="true" [style]="{width: '400px', minWidth: '300px'}"
+      [(visible)]="display">
+      <div class="form-row">
+        <input class="form-control form-control-sm">
+      </div>
+      <p-footer>
+        <button type="button" pButton icon="pi pi-check" (click)="display=false" label="確定"></button>
+      </p-footer>
+    </p-dialog>
+  </div>
+</div>
