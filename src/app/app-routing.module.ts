@@ -11,6 +11,7 @@ const routes: Routes = [
       { path: 'app', loadChildren: './modules/application/application.module#ApplicationModule' },
       { path: 'invoice', loadChildren: './modules/invoice/invoice.module#InvoiceModule' },
       { path: 'sysfun', loadChildren: './modules/sysfun/sysfun.module#SysFunModule' },
+      { path: 'shipping', loadChildren: './modules/shipping/shipping.module#ShippingModule' },
     ],
   }
 ];
