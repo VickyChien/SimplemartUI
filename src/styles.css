@@ -434,6 +434,12 @@ table .btn-outline-primary {
     font-size: 0.9em !important;
 }
 
+/*
+.text-little td {
+    padding: 2px 5px;
+}
+*/
+
 .text-before {
     color: red;
 }
