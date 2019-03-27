@@ -25,22 +25,30 @@
         </table>
 
         <div class="form-row">
-          <div class="form-group col-md-3">
+          <div class="form-group col-md-2">
             <label>進口日期</label>
             <input class="form-control form-control-sm">
           </div>
-          <div class="form-group col-md-3">
+          <div class="form-group col-md-2">
             <label>報單號碼</label>
             <input class="form-control form-control-sm">
           </div>
-          <div class="form-group col-md-3">
+          <div class="form-group col-md-2">
             <label>幣別</label>
             <select class="form-control form-control-sm">
               <option>請選擇</option>
             </select>
           </div>
-          <div class="form-group col-md-3">
+          <div class="form-group col-md-2">
             <label>匯率</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>空瓶費率</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>起岸價格</label>
             <input class="form-control form-control-sm">
           </div>
         </div>
@@ -59,15 +67,15 @@
             <input class="form-control form-control-sm">
           </div>
           <div class="form-group col-md-2">
-            <label>關稅</label>
+            <label>報驗費</label>
             <input class="form-control form-control-sm">
           </div>
           <div class="form-group col-md-2">
-            <label>商港建設費</label>
+            <label>貨櫃延滯費</label>
             <input class="form-control form-control-sm">
           </div>
           <div class="form-group col-md-2">
-            <label>報關費(保倉)</label>
+            <label>拖車費</label>
             <input class="form-control form-control-sm">
           </div>
         </div>
@@ -81,9 +89,23 @@
             <input class="form-control form-control-sm">
           </div>
           <div class="form-group col-md-2">
-            <label>=</label>
+            <label>= 總運費</label>
             <input class="form-control form-control-sm" disabled>
           </div>
+          <div class="form-group col-md-2">
+            <label>關稅</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>健康捐</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>健康捐代收代付</label>
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="form-row">
           <div class="form-group col-md-2">
             <label>報關費</label>
             <input class="form-control form-control-sm">
@@ -93,40 +115,71 @@
             <input class="form-control form-control-sm">
           </div>
           <div class="form-group col-md-2">
-            <label>=</label>
+            <label>= 總報關費</label>
             <input class="form-control form-control-sm" disabled>
           </div>
-        </div>
-        <div class="form-row">
           <div class="form-group col-md-2">
-            <label>報驗費</label>
-            <input class="form-control form-control-sm">
-          </div>
-          <div class="form-group col-md-2">
-            <label>貨櫃延滯費</label>
-            <input class="form-control form-control-sm">
-          </div>
-          <div class="form-group col-md-2">
-            <label>保險費(後段)</label>
-            <input class="form-control form-control-sm">
-          </div>
-          <div class="form-group col-md-2">
-            <label>關稅</label>
-            <input class="form-control form-control-sm">
-          </div>
-          <div class="form-group col-md-2">
-            <label>商港建設費</label>
+            <label>報關稅</label>
             <input class="form-control form-control-sm">
           </div>
           <div class="form-group col-md-2">
             <label>報關費(保倉)</label>
             <input class="form-control form-control-sm">
           </div>
+          <div class="form-group col-md-2">
+            <label>報關稅(保倉)</label>
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label>商港建設費</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>貼標費</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>L/C開狀費</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>拆櫃費</label>
+            <input class="form-control form-control-sm">
+          </div>
+
+          <div class="form-group col-md-2">
+            <label>環保費</label>
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="form-group col-md-2">
+            <label>所有額外-進口費用</label>
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label text-right">價金合計：</label>
+            <label class="col-md-2 col-form-label text-right text-danger"><b>198,929</b></label>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label text-right">費用合計：</label>
+            <label class="col-md-2 col-form-label text-right text-danger"><b>99,722</b></label>
+          </div>
+          <div class="form-group row" style="border-top:2px solid #999999;">
+            <label class="col-md-2 col-form-label text-right">合計：</label>
+            <label class="col-md-2 col-form-label text-right text-danger"><b>298,651</b></label>
+            <label class="col-md-2 col-form-label text-right">- 代收代付健康捐：</label>
+            <label class="col-md-2 col-form-label text-right text-danger"><b>0</b></label>
+            <label class="col-md-2 col-form-label text-right">= </label>
+            <label class="col-md-2 col-form-label text-right text-danger"><b>298,651</b></label>
+          </div>
         </div>
       </div>
       <div class="card-footer">
         <div class="form-row justify-content-end align-items-center">
-          <button type="submit" class="btn btn-primary mr-2">訂單下載</button>
+          <button type="submit" class="btn btn-primary mr-2">送出審核</button>
           <button type="button" class="btn btn-outline-secondary">回上一頁</button>
         </div>
       </div>
