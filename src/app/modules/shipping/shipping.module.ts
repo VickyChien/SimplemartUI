@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { ShippingEditComponent } from './components/shipping-edit.component';
 import { ShippingQueryComponent } from './components/shipping-query.component';
+import { ShippingViewComponent } from './components/shipping-view.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -11,6 +12,7 @@ import { SharedModule } from "../../shared/shared.module"
   declarations: [
     ShippingEditComponent,
     ShippingQueryComponent,
+    ShippingViewComponent,
   ],
   imports: [
     CommonModule,
@@ -18,6 +20,7 @@ import { SharedModule } from "../../shared/shared.module"
     RouterModule.forChild([
       { path: 'ShippingEdit', component: ShippingEditComponent },
       { path: 'ShippingQuery', component: ShippingQueryComponent },
+      { path: 'ShippingView', component: ShippingViewComponent },
     ])
   ]
 })
