@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-header">船務費用</div>
       <div class="card-body">
-        <table class="table table-bordered table-sm table-view">
+        <table class="table table-bordered table-sm table-view text-little">
           <tbody>
             <tr>
               <td class="td-view" style="width:10%;">訂單編號</td>
@@ -23,7 +23,29 @@
             </tr>
           </tbody>
         </table>
-
+        <table class="table table-bordered table-sm table-view table-hover text-little">
+          <thead>
+            <tr>
+              <td class="td-view">商品編號</td>
+              <td class="td-view">商品名稱</td>
+              <td class="td-view">數量</td>
+              <td class="td-view">單位</td>
+              <td class="td-view">幣別</td>
+              <td class="td-view text-right">單價</td>
+              <td class="td-view text-right">小計</td>
+            </tr>
+          </thead>
+          <tbody>
+            <td>462640192</td>
+            <td>熊寶貝玫瑰甜心衣物柔軟精3200ml</td>
+            <td>120</td>
+            <td>瓶</td>
+            <td>NTD</td>
+            <td class="text-right">288</td>
+            <td class="text-right">34,560</td>
+          </tbody>
+        </table>
+        <h5 class="text-warning">船務費用</h5>
         <div class="form-row">
           <div class="form-group col-md-2">
             <label>進口日期</label>
@@ -158,7 +180,7 @@
             <input class="form-control form-control-sm">
           </div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 contInnerReply">
           <div class="form-group row">
             <label class="col-md-2 col-form-label text-right">價金合計：</label>
             <label class="col-md-2 col-form-label text-right text-danger"><b>198,929</b></label>
@@ -176,9 +198,19 @@
             <label class="col-md-2 col-form-label text-right text-danger"><b>298,651</b></label>
           </div>
         </div>
+        <div class="form-group row justify-content-end mt-2">
+          <button type="button" class="btn btn-danger">資料暫存</button>
+        </div>
       </div>
       <div class="card-footer">
         <div class="form-row justify-content-end align-items-center">
+          <label class="col-form-label">審核人員：</label>
+          <div class="col-sm-auto mr-2">
+            <select class="form-control form-control-sm">
+              <option>請選擇</option>
+
+            </select>
+          </div>
           <button type="submit" class="btn btn-primary mr-2">送出審核</button>
           <button type="button" class="btn btn-outline-secondary">回上一頁</button>
         </div>
