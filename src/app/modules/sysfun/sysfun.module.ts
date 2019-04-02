@@ -15,6 +15,7 @@ import { QuoteBargainPurchaseComponent } from './components/quote/quote-bargain-
 import { CgradeUploadComponent } from './components/cgrade/cgrade-upload.component';
 import { CgradeQueryComponent } from './components/cgrade/cgrade-query.component';
 import { CgradeViewComponent } from './components/cgrade/cgrade-view.component';
+import { MainPageComponent } from './components/mainpage/mainpage.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -33,6 +34,7 @@ import { SharedModule } from "../../shared/shared.module"
     CgradeUploadComponent,
     CgradeQueryComponent,
     CgradeViewComponent,
+    MainPageComponent,
   ],
   imports: [
     CommonModule,
@@ -51,6 +53,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'CgradeUpload', component: CgradeUploadComponent },
       { path: 'CgradeQuery', component: CgradeQueryComponent },
       { path: 'CgradeView', component: CgradeViewComponent },
+      { path: 'MainPage', component: MainPageComponent },
     ])
   ]
 })

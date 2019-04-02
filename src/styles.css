@@ -85,6 +85,16 @@ table.table-input>tbody>tr>td {
     color: #A7017A;
 }
 
+.table-underline {
+    width: 100%;
+}
+
+.table-underline td {
+    border-bottom: 1px solid #F4EBF8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /*
 p-table, table {
     font-size: 0.9em;
