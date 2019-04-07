@@ -1,0 +1,24 @@
+<div class="container">
+    <form>
+        <div class="card">
+            <div class="card-header">
+                商品變價批次上傳
+            </div>
+            <div class="card-body">
+                <h5 class="text-warning">商品變價EXCEL上傳
+                    <small><a href="#" class="badge badge-secondary pull-right">格式範本 <i
+                                class="fa fa-download"></i></a></small>
+                </h5>
+                <p-fileUpload #excelUpload customUpload="true" chooseLabel="選擇檔案" uploadLabel="上傳"
+                    [showCancelButton]="false" maxFileSize="10000000">
+                </p-fileUpload>
+            </div>
+            <div class="card-footer">
+                <div class="form-row justify-content-end align-items-center">
+                    <button type="button" class="btn btn-outline-secondary">回上一頁</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

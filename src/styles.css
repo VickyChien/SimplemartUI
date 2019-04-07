@@ -444,6 +444,11 @@ table .btn-outline-primary {
     font-size: 0.9em !important;
 }
 
+.text-dateinterval {
+    font-size: 0.8em;
+    color: green;
+}
+
 /*
 .text-little td {
     padding: 2px 5px;

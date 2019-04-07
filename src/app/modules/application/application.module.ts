@@ -12,6 +12,8 @@ import { GoodsPriceComponent } from "./components/goodsprice/goodsprice.componen
 import { GoodsPriceViewComponent } from "./components/goodsprice/goodsprice-view.component"
 import { GoodsPriceQueryComponent } from "./components/goodsprice/goodsprice-query.component"
 import { GoodsPriceSupplierComponent } from "./components/goodsprice/goodsprice-supplier.component"
+import { GoodsPriceBatchViewComponent } from "./components/goodspricebatch/goodspricebatch-view.component"
+import { GoodsPriceBatchUploadComponent } from "./components/goodspricebatch/goodspricebatch-upload.component"
 
 @NgModule({
     declarations: [
@@ -23,7 +25,9 @@ import { GoodsPriceSupplierComponent } from "./components/goodsprice/goodsprice-
         GoodsPriceComponent,
         GoodsPriceViewComponent,
         GoodsPriceQueryComponent,
-        GoodsPriceSupplierComponent
+        GoodsPriceSupplierComponent,
+        GoodsPriceBatchViewComponent,
+        GoodsPriceBatchUploadComponent
     ],
     imports: [
         CommonModule,
@@ -38,6 +42,8 @@ import { GoodsPriceSupplierComponent } from "./components/goodsprice/goodsprice-
             { path: 'GoodsPriceView', component: GoodsPriceViewComponent },
             { path: 'GoodsPriceQuery', component: GoodsPriceQueryComponent },
             { path: 'GoodsPriceSupplier', component: GoodsPriceSupplierComponent },
+            { path: 'GoodsPriceBatchView', component: GoodsPriceBatchViewComponent },
+            { path: 'GoodsPriceBatchUpload', component: GoodsPriceBatchUploadComponent },
         ])
     ]
 })
