@@ -1,0 +1,164 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">
+        商品變價批次簽核
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">申請日期區間</label>
+          <div class="col-md-4">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">商品編號</label>
+          <div class="col-md-2">
+            <input class="form-control form-control-sm">
+          </div>
+          <label class="col-md-2 col-form-label text-right">商品名稱</label>
+          <div class="col-md-2">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">通路</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>請選擇</option>
+            </select>
+          </div>
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete formControlName="supCode" inputStyleClass="form-control form-control-sm"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">簽核狀態</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>請選擇</option>
+            </select>
+          </div>
+          <label class="col-md-2 col-form-label text-right">申請來源</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>請選擇</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">查詢</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!--其他功能按鈕-->
+  <div class="form-row justify-content-end align-items-center my-2 mx-2">
+    <!--<input type="button" class="btn btn-success mr-2" value="商品變價批次上傳" />-->
+    <input type="button" class="btn btn-success" value="商品變價申請" />
+  </div>
+  <!--DataGrid-->
+  <div>
+    <table class="table table-bordered table-sm table-view table-hover text-small">
+      <tr>
+        <th class="td-view text-center" style="width:50px;">#</th>
+        <th class="td-view">申請時間
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">商品編號
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">商品名稱
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">供應商編號
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">供應商名稱
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">通路名稱
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">提報來源
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">簽核狀態
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view text-center" style="width:80px;">檢視</th>
+      </tr>
+
+      <tr>
+        <td class="text-center">123</td>
+        <td>2019/01/10 12:34:45</td>
+        <td>8521345678</td>
+        <td>義美巧克力酥片黑可可(280公克)</td>
+        <td>12348765</td>
+        <td>金財通商務科技(股)</td>
+        <td>美廉社</td>
+        <td>供應商</td>
+        <td>家購人員審核中</td>
+        <td class="text-center">
+          <button type="button" class="btn btn-outline-primary">檢視</button>
+        </td>
+      </tr>
+    </table>
+
+
+    <table class="table table-bordered table-sm table-view table-hover text-small">
+      <tr>
+        <th class="td-view text-center" style="width:50px;">#</th>
+        <th class="td-view">申請時間
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">商品編號
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">商品名稱
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">供應商編號
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">供應商名稱
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">通路名稱
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">提報來源
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view">簽核狀態
+          <i class="fa fa-sort"></i>
+        </th>
+        <th class="td-view text-center" style="width:80px;">檢視</th>
+      </tr>
+
+      <tr>
+        <td class="text-center">123</td>
+        <td>2019/01/10 12:34:45</td>
+        <td>8521345678</td>
+        <td>義美巧克力酥片黑可可(280公克)</td>
+        <td>12348765</td>
+        <td>金財通商務科技(股)</td>
+        <td>美廉社</td>
+        <td>供應商</td>
+        <td>家購人員審核中</td>
+        <td class="text-center">
+          <button type="button" class="btn btn-outline-primary">檢視</button>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>

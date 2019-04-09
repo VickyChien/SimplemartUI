@@ -14,6 +14,7 @@ import { GoodsPriceQueryComponent } from "./components/goodsprice/goodsprice-que
 import { GoodsPriceSupplierComponent } from "./components/goodsprice/goodsprice-supplier.component"
 import { GoodsPriceBatchViewComponent } from "./components/goodspricebatch/goodspricebatch-view.component"
 import { GoodsPriceBatchUploadComponent } from "./components/goodspricebatch/goodspricebatch-upload.component"
+import { GoodsPriceBatchSignComponent } from "./components/goodspricebatch/goodspricebatch-sign.component"
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { GoodsPriceBatchUploadComponent } from "./components/goodspricebatch/goo
         GoodsPriceQueryComponent,
         GoodsPriceSupplierComponent,
         GoodsPriceBatchViewComponent,
-        GoodsPriceBatchUploadComponent
+        GoodsPriceBatchUploadComponent,
+        GoodsPriceBatchSignComponent
     ],
     imports: [
         CommonModule,
@@ -44,6 +46,7 @@ import { GoodsPriceBatchUploadComponent } from "./components/goodspricebatch/goo
             { path: 'GoodsPriceSupplier', component: GoodsPriceSupplierComponent },
             { path: 'GoodsPriceBatchView', component: GoodsPriceBatchViewComponent },
             { path: 'GoodsPriceBatchUpload', component: GoodsPriceBatchUploadComponent },
+            { path: 'GoodsPriceBatchSign', component: GoodsPriceBatchSignComponent },
         ])
     ]
 })
