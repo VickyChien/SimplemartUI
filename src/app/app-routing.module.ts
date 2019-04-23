@@ -12,6 +12,7 @@ const routes: Routes = [
       { path: 'invoice', loadChildren: './modules/invoice/invoice.module#InvoiceModule' },
       { path: 'sysfun', loadChildren: './modules/sysfun/sysfun.module#SysFunModule' },
       { path: 'shipping', loadChildren: './modules/shipping/shipping.module#ShippingModule' },
+      { path: 'report', loadChildren: './modules/report/report.module#ReportModule' },
     ],
   }
 ];
