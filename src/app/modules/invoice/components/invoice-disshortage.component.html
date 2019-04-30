@@ -1,0 +1,88 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">
+        退貨折讓不足額 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">折讓日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete formControlName="supCode" inputStyleClass="form-control form-control-sm" [style]="{'width':'120px'}"
+              maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">查詢</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!--其他功能按鈕-->
+  <div class="form-row justify-content-end align-items-center my-2 mx-2">
+    <input type="button" class="btn btn-info" value="查詢下載" />
+  </div>
+  <!--DataGrid-->
+  <div>
+    <table class="table table-bordered table-sm table-view table-hover text-small">
+      <thead>
+        <tr>
+          <th class="text-center td-view" style="width:50px;">#</th>
+          <th class="td-view">退貨單號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">項次
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商編號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">供應商名稱
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">商品編號
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view">商品名稱
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view text-right">未稅金額
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view text-right">稅額
+            <i class="fa fa-sort"></i>
+          </th>
+          <th class="td-view text-right">含稅金額
+            <i class="fa fa-sort"></i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center">123</td>
+          <td>20192223456789</td>
+          <td>1</td>
+          <td>1265635401</td>
+          <td>金財通商務科技(股)</td>
+          <td>0006001</td>
+          <td>三好特級精米-4kg</td>
+          <td class="text-right">1,346</td>
+          <td class="text-right">67</td>
+          <td class="text-right">1,413</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

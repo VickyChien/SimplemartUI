@@ -6,6 +6,7 @@ import { InvoiceQueryComponent } from './components/invoice-query.component';
 import { InvoiceCreateComponent } from './components/invoice-create.component';
 import { InvoiceViewComponent } from './components/invoice-view.component';
 import { InvoiceConfirmComponent } from './components/invoice-confirm.component';
+import { InvoiceDisShortageComponent } from './components/invoice-disshortage.component';
 
 import { SharedModule } from "../../shared/shared.module"
 
@@ -14,7 +15,8 @@ import { SharedModule } from "../../shared/shared.module"
     InvoiceQueryComponent,
     InvoiceCreateComponent,
     InvoiceViewComponent,
-    InvoiceConfirmComponent
+    InvoiceConfirmComponent,
+    InvoiceDisShortageComponent
   ],
   imports: [
     CommonModule,
@@ -24,6 +26,7 @@ import { SharedModule } from "../../shared/shared.module"
       { path: 'InvoiceCreate', component: InvoiceCreateComponent },
       { path: 'InvoiceView', component: InvoiceViewComponent },
       { path: 'InvoiceConfirm', component: InvoiceConfirmComponent },
+      { path: 'InvoiceDisShortage', component: InvoiceDisShortageComponent },
     ])
   ]
 })
