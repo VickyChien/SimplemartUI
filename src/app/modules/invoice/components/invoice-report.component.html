@@ -1,0 +1,211 @@
+<div class="container">
+  <form>
+    <div class="card">
+      <div class="card-header">
+        進貨發票明細表 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">訂單編號</label>
+          <div class="col-md-2">
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete inputStyleClass="form-control form-control-sm" id="SupCode" name="SupCode"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">驗收日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+          <label class="col-md-2 col-form-label text-right">發票日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發票年月</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">結帳年月</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發票狀態</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+              <option>已開立</option>
+              <option>已立帳</option>
+              <option>已結案</option>
+              <option>已退回</option>
+            </select>
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">稅別</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">報表下載</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+    <div class="my-5"></div>
+    <div class="card">
+      <div class="card-header">
+        退貨折讓明細表 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">退貨單編號</label>
+          <div class="col-md-2">
+            <input class="form-control form-control-sm">
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete id="supCodeRtn" name="supCodeRtn" inputStyleClass="form-control form-control-sm"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">退貨日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+          <label class="col-md-2 col-form-label text-right">發票日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發票年月</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">結帳年月</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發票狀態</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+              <option>已立帳</option>
+              <option>已結案</option>
+            </select>
+          </div>
+          <div class="col-md-1"></div>
+          <label class="col-md-2 col-form-label text-right">稅別</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">報表下載</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+    <div class="my-5"></div>
+    <div class="card">
+      <div class="card-header">
+        廠商月份發票明細表 - 查詢條件
+        <i class="fa fa-caret-down pull-right"></i>
+      </div>
+      <div class="card-body">
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">供應商</label>
+          <div class="col-md-4">
+            <p-autoComplete id="supCodeSupplier" name="supCodeSupplier" inputStyleClass="form-control form-control-sm"
+              [style]="{'width':'120px'}" maxlength="10"></p-autoComplete>
+            <label class="text-info ml-2">供應商名稱</label>
+          </div>
+          <label class="col-md-2 col-form-label text-right">發票日期</label>
+          <div class="col-md-3">
+            <input class="form-control form-control-sm">
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發票年月</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+          <div class="col-md-2"></div>
+          <label class="col-md-2 col-form-label text-right">結帳年月</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row align-items-center">
+          <label class="col-md-2 col-form-label text-right">發票狀態</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+              <option>已立帳</option>
+              <option>已結案</option>
+            </select>
+          </div>
+          <div class="col-md-2"></div>
+          <label class="col-md-2 col-form-label text-right">稅別</label>
+          <div class="col-md-2">
+            <select class="form-control form-control-sm">
+              <option>全部</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="form-row justify-content-end align-items-center">
+          <button type="button" class="btn btn-primary mr-2">報表下載</button>
+          <button type="reset" class="btn btn-outline-secondary">清除重填</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
